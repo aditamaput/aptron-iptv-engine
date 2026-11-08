@@ -87,7 +87,7 @@ def validate_hls(url: str, headers: dict) -> dict:
         variants = []
         for index, line in enumerate(lines[:-1]):
             if line.startswith("#EXT-X-STREAM-INF:"):
-                match = re.search(r"BANDWIDTH=(\\d+)", line)
+                match = re.search(r"BANDWIDTH=(\d+)", line)
                 bandwidth = int(match.group(1)) if match else 0
                 variants.append((bandwidth, urljoin(url, lines[index + 1])))
         if variants:

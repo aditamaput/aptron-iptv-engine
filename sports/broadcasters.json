@@ -1017,16 +1017,179 @@
       ],
       "source": "https://corporate.astro.com.my/mediaroom-releases/astro-continues-its-partnership-liga-malaysia-driving-local-football-forward",
       "notes": "Current rights term is two seasons from the 2026 announcement; do not reuse the older 2025/26 channel numbers without confirming the current lineup."
+    },
+    {
+      "id": "laliga-2026-27",
+      "name": "LALIGA EA SPORTS",
+      "rights_period": "2026/27",
+      "territories": [
+        {
+          "country": "Indonesia, Malaysia, Singapore, Thailand and Philippines",
+          "partners": [
+            "beIN SPORTS"
+          ],
+          "notes": "beIN says it is the exclusive LaLiga rights-holder in these Southeast Asian markets; streaming via beIN SPORTS CONNECT. Confirm channel and local subscription."
+        },
+        {
+          "country": "Denmark, Sweden, Finland and Iceland",
+          "partners": [
+            "ESPN on Disney+"
+          ],
+          "notes": "All 380 matches per season live under four-season agreement starting 2026/27."
+        },
+        {
+          "country": "Norway",
+          "partners": [
+            "TV 2"
+          ],
+          "notes": "Renewed through summer 2030."
+        },
+        {
+          "country": "Sub-Saharan Africa (48 markets)",
+          "partners": [
+            "DAZN"
+          ],
+          "notes": "All 380 matches live and on-demand for 2026/27 through 2028/29; subscription service."
+        },
+        {
+          "country": "Other territories",
+          "partners": [
+            "Use official LALIGA broadcaster locator"
+          ],
+          "notes": "Rights are territory-specific and updated dynamically; check the official locator rather than infer partners."
+        }
+      ],
+      "source": [
+        "https://www.beinsports.com/en-asia/football/articles/laliga-2025-26-how-to-watch-live-bein-sports",
+        "https://iaas-public-front-pro.laliga.com/en-US/news/laliga-strengthens-nordic-broadcasting-strategy-with-disney-and-tv2",
+        "https://dazngroup.com/press-room/dazn-expands-its-global-footprint-in-sub-saharan-africa-bringing-every-laliga-ea-sports-match-to-fans-in-the-region-through-2029/",
+        "https://www.laliga.com/en-US/where-to-watch-laliga-easports"
+      ],
+      "notes": "Official league locator is the authoritative dynamic source for other territories. Do not treat free DAZN global highlights as live-match rights."
+    },
+    {
+      "id": "bundesliga-indonesia-2026-27",
+      "name": "Bundesliga (Indonesia rights snapshot)",
+      "rights_period": "2026/27 (reported; verify with local rights-holder)",
+      "territories": [
+        {
+          "country": "Indonesia",
+          "partners": [
+            "MNC Group",
+            "AllPlay Sports (IndiHome TV)",
+            "MAXstream TV"
+          ],
+          "notes": "A specialist broadcaster directory reports MNC rights for 2024–2029, AllPlay Sports/IndiHome and MAXstream coverage for 2025–2029. MNC channels/platforms named include RCTI, GTV, iNews, RCTI+, Vision+ and Sportstars; fixture allocation varies. Secondary-source evidence: confirm with each operator before playlist inclusion."
+        }
+      ],
+      "source": [
+        "https://www.bundesliga.com/en/bundesliga/info/broadcasters",
+        "https://www.livesoccertv.com/id/competitions/germany/bundesliga/watch/indonesia/"
+      ],
+      "notes": "Bundesliga's official broadcaster locator is dynamic and activates match-specific broadcaster information close to kickoff. Indonesia partner details above are marked as secondary-source leads, not independently verified rights contracts."
+    },
+    {
+      "id": "ligue1-indonesia-2026-27",
+      "name": "Ligue 1 McDonald's (Indonesia rights snapshot)",
+      "rights_period": "2026/27",
+      "territories": [
+        {
+          "country": "Indonesia",
+          "partners": [
+            "Vidio"
+          ],
+          "notes": "Vidio's 6 November 2026 matchweek guide states all Matchweek 10 fixtures are live on Vidio. LFP's 2026/27 global announcement reports Vidio as Indonesian partner carrying all matches."
+        },
+        {
+          "country": "Thailand",
+          "partners": [
+            "MONO"
+          ],
+          "notes": "Named as a partner in LFP's international distribution announcement; confirm season and local fixture schedule."
+        },
+        {
+          "country": "Vietnam",
+          "partners": [
+            "VTVcab"
+          ],
+          "notes": "Named as a partner in LFP's international distribution announcement; confirm season and local fixture schedule."
+        },
+        {
+          "country": "Spain",
+          "partners": [
+            "DAZN"
+          ],
+          "notes": "LFP Media's 2026/27 partner announcement reports all matches."
+        },
+        {
+          "country": "India",
+          "partners": [
+            "JioStar"
+          ],
+          "notes": "Selected matches only; not full-season coverage."
+        },
+        {
+          "country": "Brazil",
+          "partners": [
+            "Xsports",
+            "CazéTV"
+          ],
+          "notes": "Xsports: three matches per matchday; CazéTV also named as partner."
+        }
+      ],
+      "source": [
+        "https://www.vidio.com/blog/matchweek-10-ligue-1-2026-27/",
+        "https://football.newstank.ch/article/view/451944/2026-27-ligue-1-mcdonald-s-broadcast-in-215-territories-via-53-partners.html",
+        "https://ligue1.com/en/broadcasters"
+      ],
+      "notes": "The official Ligue 1 broadcaster locator is dynamic. Partner scope varies; India is explicitly selected-match coverage, not all matches."
+    },
+    {
+      "id": "serie-a-us-2026-27",
+      "name": "Serie A and Italian domestic cup competitions (United States)",
+      "rights_period": "through 2026/27",
+      "territories": [
+        {
+          "country": "United States and territories",
+          "partners": [
+            "Paramount+",
+            "CBS Sports",
+            "CBS Sports Golazo Network"
+          ],
+          "notes": "CBS Sports and Lega Serie A extended rights through end of 2026/27. All 380 Serie A matches stream live on Paramount+; selected matches appear on CBS linear/digital services. Coppa Italia and Supercoppa coverage included under the announced package."
+        }
+      ],
+      "source": "https://www.paramountpressexpress.com/paramount-plus/releases/?view=112947-cbs-sports-and-lega-serie-a-extend-us-media-rights-partnership-through-20262027-season-with-all-matches-to-continue-to-be-streamed-on-paramount",
+      "notes": "This is a U.S.-specific rights record; it must not be generalized to other countries."
+    },
+    {
+      "id": "conmebol-libertadores-brazil-2027",
+      "name": "CONMEBOL Libertadores (Brazil Package C)",
+      "rights_period": "from 2027",
+      "territories": [
+        {
+          "country": "Brazil",
+          "partners": [
+            "SporTV",
+            "TV Globo",
+            "GE TV",
+            "Paramount+"
+          ],
+          "notes": "New agreements announced 9 October 2026. SporTV returns with a package of 41 matches per season including the final, complementing Globo and GE TV coverage. Paramount+ also streams 41 matches per season including the final under a separate package."
+        }
+      ],
+      "source": "https://www.img.com/our-news/conmebol-announces-new-media-rights-agreements-with-globo-sportv-and-paramount",
+      "notes": "Package C is a specific package, not a claim that these partners show every Libertadores match. Other Brazilian packages and other countries require separate records."
     }
   ],
   "next_research_targets": [
-    "K League (South Korea) and other Asian domestic leagues with official international rights",
-    "LaLiga, Bundesliga, Serie A, Ligue 1, Eredivisie and Primeira Liga by territory",
+    "Serie A, Bundesliga and LaLiga territory-by-territory official partner verification",
+    "K League domestic rights and overseas market partners",
+    "CONMEBOL Libertadores/Sudamericana territory packages outside Brazil",
     "Brasileirão, Liga MX and Argentina Primera",
-    "CONMEBOL Libertadores and Sudamericana",
-    "CAF club competitions, national leagues and national teams",
-    "Women’s football, youth competitions and public free-to-air match coverage"
+    "CAF competitions and free-to-air national broadcasters",
+    "Women’s football and national-team competitions"
   ],
-  "coverage_status": "expanded-domestic-league-research",
+  "coverage_status": "expanded-global-league-rights",
   "sources_note": "Competition rights are not interchangeable. One-off finals, selected matchday coverage, highlights-only, in-flight rights and full-season rights are explicitly qualified in notes."
 }

@@ -7,6 +7,7 @@ Automatic discovery, stream reachability checks, HD prioritization and daily M3U
 - Pulls channel, stream, logo and blocklist metadata from the public iptv-org API.
 - Filters Indonesian channels (ISO country code `ID`), closed channels, NSFW entries and DMCA/NSFW blocklisted channel IDs.
 - Checks public HTTP(S) stream URLs for basic reachability.
+- For detected HLS streams, checks the manifest and one sample media segment.
 - Prioritizes streams declared as 720p, 1080p or 2160p.
 - Publishes four playlists and a JSON health report.
 
@@ -44,7 +45,7 @@ CHECK_STREAMS=false python generator.py
 
 - The source API documents channel metadata, stream URLs, declared quality, headers, labels and EPG guide references. See [iptv-org/api](https://github.com/iptv-org/api).
 - "HD" is based on the source's declared quality/title; the engine does not measure bitrate or decode video to certify actual resolution.
-- HTTP 2xx is only a reachability signal. It does not guarantee all HLS segments work, that the stream is available in Indonesia, or that every IPTV app can play it.
+- HTTP 2xx is only a reachability signal. HLS validation adds a manifest and one sample-segment check, but does not guarantee continuous playback, all segments, bitrate, Indonesian availability or app compatibility.
 - This engine collects publicly listed HTTP(S) feeds. It does not bypass DRM, paywalls, login, geo-controls or other access restrictions, and excludes IDs on the source's DMCA/NSFW blocklist.
 - A daily schedule is not an uptime guarantee; GitHub Actions can delay scheduled runs. Playlist links remain stable, but contents update only after a successful run and commit.
 - Only use streams you are authorized to access. Publicly reachable does not automatically mean licensed for every use.

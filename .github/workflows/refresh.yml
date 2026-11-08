@@ -1,0 +1,43 @@
+name: Refresh Indonesia IPTV
+
+on:
+  schedule:
+    - cron: "17 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-iptv
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate playlists and health report
+        run: python generator.py
+        env:
+          COUNTRY_CODE: ID
+          CHECK_STREAMS: "true"
+          CHECK_TIMEOUT: "10"
+          CHECK_WORKERS: "16"
+      - name: Commit refreshed output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add playlists/ reports/
+          if git diff --cached --quiet; then
+            echo "No playlist or report changes."
+          else
+            git commit -m "chore: refresh Indonesia IPTV playlists"
+            git push
+          fi

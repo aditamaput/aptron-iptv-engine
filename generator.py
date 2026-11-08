@@ -63,6 +63,56 @@ def category_group(channel: dict) -> str:
     label = CATEGORY_NAMES.get(str(cats[0]).lower(), str(cats[0]).title())
     return f"Indonesia | {label}"
 
+def fetch_sample(url: str, headers: dict, limit: int = 65536):
+    request = Request(url, headers=headers)
+    with urlopen(request, timeout=TIMEOUT) as response:
+        return response.status, response.headers.get("Content-Type", "").lower(), response.read(limit)
+
+def validate_hls(url: str, headers: dict) -> dict:
+    """Check an HLS manifest and one media segment; this is not a full playback test."""
+    from urllib.parse import urljoin
+
+    result = {"status": "not_hls", "detail": "Stream is not an HLS playlist"}
+    try:
+        status, content_type, body = fetch_sample(url, headers, 65536)
+        text = body.decode("utf-8", errors="replace")
+        if not text.lstrip().startswith("#EXTM3U"):
+            return result
+
+        playlist_url = url
+        # For a master playlist, probe the highest-bandwidth variant.
+        lines = [line.strip() for line in text.splitlines() if line.strip()]
+        variants = []
+        for index, line in enumerate(lines[:-1]):
+            if line.startswith("#EXT-X-STREAM-INF:"):
+                match = re.search(r"BANDWIDTH=(\\d+)", line)
+                bandwidth = int(match.group(1)) if match else 0
+                variants.append((bandwidth, urljoin(url, lines[index + 1])))
+        if variants:
+            _, playlist_url = max(variants, key=lambda item: item[0])
+            _, _, body = fetch_sample(playlist_url, headers, 65536)
+            text = body.decode("utf-8", errors="replace")
+            lines = [line.strip() for line in text.splitlines() if line.strip()]
+            if not text.lstrip().startswith("#EXTM3U"):
+                return {"status": "failed", "detail": "Variant URL did not return an HLS playlist"}
+
+        segment_url = next(
+            (urljoin(playlist_url, line) for line in lines
+             if not line.startswith("#") and line.lower().split("?")[0].endswith((".ts", ".m4s", ".mp4", ".aac"))),
+            None
+        )
+        if not segment_url:
+            return {"status": "inconclusive", "detail": "No media segment URI found in sampled playlist"}
+
+        segment_headers = dict(headers)
+        segment_headers["Range"] = "bytes=0-2047"
+        seg_status, seg_type, segment = fetch_sample(segment_url, segment_headers, 2048)
+        if 200 <= seg_status < 300 and segment and not segment.lstrip().lower().startswith((b"<html", b"<!doctype")):
+            return {"status": "segment_ok", "detail": f"Manifest and sample segment reachable (HTTP {seg_status})"}
+        return {"status": "failed", "detail": f"Media segment returned HTTP {seg_status} or invalid content"}
+    except Exception as exc:
+        return {"status": "failed", "detail": str(exc)[:180]}
+
 def check_stream(stream: dict) -> dict:
     url = str(stream.get("url", "")).strip()
     parsed = urlparse(url)
@@ -96,6 +146,13 @@ def check_stream(stream: dict) -> dict:
             return result
         result["status"] = "online"
         result["detail"] = f"HTTP {status}; {content_type or 'content type unknown'}"
+        if b"#EXTM3U" in sample[:512] or "mpegurl" in content_type:
+            hls = validate_hls(url, headers)
+            result["hls_status"] = hls["status"]
+            result["hls_detail"] = hls["detail"]
+        else:
+            result["hls_status"] = "not_hls"
+            result["hls_detail"] = "No HLS manifest detected"
     except HTTPError as exc:
         result["http_status"] = exc.code
         result["status"] = "offline"
@@ -190,6 +247,7 @@ def main():
     write_playlist("indonesia-online-hd.m3u", online_hd)
 
     counts = Counter(row["health"]["status"] for row in rows)
+    hls_counts = Counter(row["health"].get("hls_status", "not_checked") for row in rows)
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "country": COUNTRY,
@@ -199,7 +257,10 @@ def main():
         "declared_hd_streams_720p_plus": len(hd),
         "http_reachable_streams": counts.get("online", 0),
         "health_counts": dict(counts),
+        "hls_validation_counts": dict(hls_counts),
+        "hls_segment_verified_streams": hls_counts.get("segment_ok", 0),
         "notes": [
+            "HLS validation checks a manifest and one sample media segment; it is not a continuous playback or bitrate test.",
             "Quality is based on source metadata/title, not measured bitrate or decoded resolution.",
             "HTTP reachability does not guarantee playback; HLS segments, geo restrictions and app compatibility are not fully tested.",
             "Only publicly listed HTTP(S) feeds are collected. DRM, paywall, login and access-control bypass are not attempted."

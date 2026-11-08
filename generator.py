@@ -28,13 +28,11 @@ CATEGORY_NAMES = {
     "animation": "Animasi", "auto": "Otomotif", "business": "Bisnis",
     "classic": "Klasik", "comedy": "Komedi", "cooking": "Memasak",
     "culture": "Budaya", "documentary": "Dokumenter", "education": "Edukasi",
-    "entertainment": "Hiburan", "family": "Keluarga", " general": "Umum",
-    "general": "Umum", "kids": "Anak", "legislative": "Pemerintahan",
-    "lifestyle": "Gaya Hidup", "movies": "Film", "music": "Musik",
-    "news": "Berita", "outdoor": "Outdoor", "religious": "Religi",
+    "entertainment": "Hiburan", "family": "Keluarga", "general": "Umum",
+    "kids": "Anak", "legislative": "Pemerintahan", "lifestyle": "Gaya Hidup",
+    "movies": "Film", "music": "Musik", "news": "Berita", "outdoor": "Outdoor",
     "religious": "Religi", "series": "Serial", "science": "Sains",
-    "shop": "Belanja", "sports": "Olahraga", "travel": "Wisata",
-    "weather": "Cuaca",
+    "shop": "Belanja", "sports": "Olahraga", "travel": "Wisata", "weather": "Cuaca",
 }
 
 def get_json(name: str):
@@ -43,11 +41,11 @@ def get_json(name: str):
         return json.loads(response.read().decode("utf-8"))
 
 def clean(value) -> str:
-    return re.sub(r'[\\r\\n,"]', " ", str(value or "")).strip()
+    return re.sub(r'[\r\n,"]', " ", str(value or "")).strip()
 
 def quality_score(value: str) -> int:
     text = str(value or "").lower()
-    match = re.search(r"(\\d{3,4})\\s*[pi]?", text)
+    match = re.search(r"(\d{3,4})\s*[pi]?", text)
     if match:
         return int(match.group(1))
     if "uhd" in text or "4k" in text:
@@ -91,7 +89,6 @@ def check_stream(stream: dict) -> dict:
             result["status"] = "offline"
             result["detail"] = f"HTTP {status}"
             return result
-        # Detect HTML error/login pages masquerading as stream responses.
         prefix = sample.lstrip()[:100].lower()
         if b"<html" in prefix or b"<!doctype html" in prefix:
             result["status"] = "unplayable"
@@ -117,9 +114,9 @@ def extinf(channel: dict, stream: dict, logos: dict) -> str:
     if logo.startswith(("https://", "http://")):
         attrs.append(f'tvg-logo="{clean(logo)}"')
     title = clean(stream.get("title"))
-    q = clean(stream.get("quality") or title)
-    display = f"{name} ({q})" if q else name
-    return f"#EXTINF:-1 {' '.join(attrs)},{display}\\n{stream['url']}"
+    quality = clean(stream.get("quality") or title)
+    display = f"{name} ({quality})" if quality else name
+    return f"#EXTINF:-1 {' '.join(attrs)},{display}\n{stream['url']}"
 
 def main():
     PLAYLIST_DIR.mkdir(parents=True, exist_ok=True)
@@ -145,20 +142,20 @@ def main():
 
     candidates, seen = [], set()
     for stream in streams_raw:
-        cid, url = stream.get("channel"), str(stream.get("url") or "").strip()
-        if cid not in channels or not url or url in seen:
+        channel_id = stream.get("channel")
+        url = str(stream.get("url") or "").strip()
+        if channel_id not in channels or not url or url in seen:
             continue
         if urlparse(url).scheme not in ("http", "https"):
             continue
-        # Ignore explicitly blocked feeds; preserve geo-blocked labels in the report.
         seen.add(url)
-        candidates.append((channels[cid], stream))
+        candidates.append((channels[channel_id], stream))
 
     print(f"{len(channels)} Indonesian channel records; {len(candidates)} unique stream URLs.")
     health = {}
     if CHECK_STREAMS and candidates:
         with concurrent.futures.ThreadPoolExecutor(max_workers=WORKERS) as pool:
-            futures = {pool.submit(check_stream, s): s for _, s in candidates}
+            futures = {pool.submit(check_stream, stream): stream for _, stream in candidates}
             for future in concurrent.futures.as_completed(futures):
                 item = future.result()
                 health[item["url"]] = item
@@ -166,63 +163,62 @@ def main():
 
     rows = []
     for channel, stream in candidates:
-        q = quality_score(stream.get("quality") or stream.get("title"))
+        quality = quality_score(stream.get("quality") or stream.get("title"))
         state = health.get(stream["url"], {"status": "not_checked"})
         rows.append({
-            "channel": channel, "stream": stream, "quality": q,
+            "channel": channel, "stream": stream, "quality": quality,
             "health": state, "group": category_group(channel)
         })
 
-    # Highest declared quality first within each channel; keep all source options.
-    rows.sort(key=lambda r: (r["group"], clean(r["channel"].get("name")).casefold(),
-                             -r["quality"], r["stream"].get("url", "")))
+    rows.sort(key=lambda row: (
+        row["group"], clean(row["channel"].get("name")).casefold(),
+        -row["quality"], row["stream"].get("url", "")
+    ))
 
     def write_playlist(filename: str, selected: list):
         lines = ["#EXTM3U"]
-        lines.extend(extinf(r["channel"], r["stream"], logos) for r in selected)
-        (PLAYLIST_DIR / filename).write_text("\\n".join(lines) + "\\n", encoding="utf-8")
+        lines.extend(extinf(row["channel"], row["stream"], logos) for row in selected)
+        (PLAYLIST_DIR / filename).write_text("\n".join(lines) + "\n", encoding="utf-8")
 
-    online = [r for r in rows if r["health"]["status"] == "online"] if CHECK_STREAMS else rows
-    hd = [r for r in rows if r["quality"] >= 720]
-    online_hd = [r for r in online if r["quality"] >= 720]
+    online = [row for row in rows if row["health"]["status"] == "online"] if CHECK_STREAMS else rows
+    hd = [row for row in rows if row["quality"] >= 720]
+    online_hd = [row for row in online if row["quality"] >= 720]
 
     write_playlist("indonesia-all.m3u", rows)
     write_playlist("indonesia-hd.m3u", hd)
     write_playlist("indonesia-online.m3u", online)
     write_playlist("indonesia-online-hd.m3u", online_hd)
 
-    counts = Counter(r["health"]["status"] for r in rows)
+    counts = Counter(row["health"]["status"] for row in rows)
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "country": COUNTRY,
         "source": "https://github.com/iptv-org/api",
-        "channels_with_streams": len({r["channel"]["id"] for r in rows}),
+        "channels_with_streams": len({row["channel"]["id"] for row in rows}),
         "candidate_streams": len(rows),
         "declared_hd_streams_720p_plus": len(hd),
         "http_reachable_streams": counts.get("online", 0),
         "health_counts": dict(counts),
         "notes": [
-            "Quality is based on source metadata/title, not a measured bitrate or decoded resolution.",
-            "HTTP reachability does not guarantee playback; HLS segments, DRM, geo restrictions and app compatibility are not fully tested.",
+            "Quality is based on source metadata/title, not measured bitrate or decoded resolution.",
+            "HTTP reachability does not guarantee playback; HLS segments, geo restrictions and app compatibility are not fully tested.",
             "Only publicly listed HTTP(S) feeds are collected. DRM, paywall, login and access-control bypass are not attempted."
         ],
         "streams": [{
-            "channel": r["channel"].get("name"),
-            "channel_id": r["channel"].get("id"),
-            "title": r["stream"].get("title"),
-            "quality": r["stream"].get("quality"),
-            "url": r["stream"].get("url"),
-            "labels": r["stream"].get("labels") or [],
-            "status": r["health"]["status"],
-            "detail": r["health"].get("detail", "")
-        } for r in rows]
+            "channel": row["channel"].get("name"),
+            "channel_id": row["channel"].get("id"),
+            "title": row["stream"].get("title"),
+            "quality": row["stream"].get("quality"),
+            "url": row["stream"].get("url"),
+            "labels": row["stream"].get("labels") or [],
+            "status": row["health"]["status"],
+            "detail": row["health"].get("detail", "")
+        } for row in rows]
     }
     (REPORT_DIR / "health.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    print(f"Generated {len(rows)} candidates; {len(hd)} declared HD+; "
-          f"{len(online)} HTTP reachable.")
-    print("Playlists:", PLAYLIST_DIR.resolve())
+    print(f"Generated {len(rows)} candidates; {len(hd)} declared HD+; {len(online)} HTTP reachable.")
 
 if __name__ == "__main__":
     try:

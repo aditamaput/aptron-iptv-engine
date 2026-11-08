@@ -19,6 +19,9 @@ A broadcaster may hold Premier League rights but not UEFA Champions League right
 - Roshn Saudi Pro League 2026/27: 45 international partners across 180+ territories; regional partner groups and the league's new 16-market direct-to-consumer model are separately qualified.
 - A-League Men and Ninja A-League 2026/27: detailed official overseas directory, including SPOTV SEA in Indonesia and eligible-market official YouTube coverage.
 - MLS 2026: Apple TV lists every match live; this is a paid streaming service, not a public IPTV feed.
+- BRI Super League Indonesia 2026/27: I.League confirms Emtek Group as official broadcaster; Indosiar is a primary channel and Vidio lists the season hub.
+- Thai League 2025/26–2028/29: Gulf/AIS/JAS exclusive domestic partnership, with AIS PLAY and MONO29 named by the FA Thailand.
+- Malaysia League 2026/27–2027/28: Astro continues as official broadcaster, with broadcast and sooka streaming distribution.
 - Coverage includes selected territories across Asia-Pacific, Europe, Africa/MENA, and the Americas. It is a starting index, not yet an exhaustive list of every country or domestic competition.
 
 ## Files
@@ -50,4 +53,9 @@ A broadcaster may hold Premier League rights but not UEFA Champions League right
 - Saudi Pro League 16-market distribution model: https://www.spl.com.sa/en/news/spl-opens-new-route-to-international-fans-with-innovative-distribution-model
 - A-Leagues international broadcast partners: https://aleagues.com.au/more/where-to-watch-aleagues-overseas/
 - MLS how to watch: https://www.mlssoccer.com/how-to-watch/
+- I.League official broadcaster announcement (BRI Super League 2026/27): https://www.ileague.id/news/detail/bri-dan-i-league-perkuat-kolaborasi-untuk-bri-super-league-2026-27--emtek-group-kembali-jadi-official-broadcaster
+- Vidio BRI Super League 2026/27 hub: https://www.vidio.com/categories/liga-1
+- FA Thailand Thai League rights announcement: https://www.fathailand.org/news-detail/m9SZA
+- Astro Malaysia League 2026/27–2027/28 announcement: https://corporate.astro.com.my/mediaroom-releases/astro-continues-its-partnership-liga-malaysia-driving-local-football-forward
+- Bundesliga official broadcaster locator (select territory and fixture): https://www.bundesliga.com/en/bundesliga/info/broadcasters
 - FIFA World Cup 2026 broadcast-partner information: https://www.fifa.com/en/ar/mens/worldcup/canadamexicousa2026/articles/where-to-watch-the-schedule-reveal-live-matches

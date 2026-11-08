@@ -53,6 +53,8 @@ https://live.efarinatv.com/hls/bgtaufikganteng.m3u8
 https://hgmtv.com:19360/garudatvlivestreaming/garudatvlivestreaming.m3u8
 #EXTINF:-1 tvg-id="JawaPosTV.id" tvg-name="Jawa Pos TV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Jawa_Pos_TV_2024.svg/960px-Jawa_Pos_TV_2024.svg.png",Jawa Pos TV (720p)
 http://122.248.43.242:1935/JAWAPOSTVJKT/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="JekTV.id" tvg-name="Jek TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/wh75d1f.png",Jek TV (720p)
+http://27.124.81.245:1935/jektv/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="JogjaIstimewaTV.id" tvg-name="Jogja Istimewa TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/VEqQfTu.png",Jogja Istimewa TV (720p)
 http://103.255.15.222:1935/tv/jitv_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="JTV.id" tvg-name="JTV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/mIDWIQk.png",JTV (1080p)

@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-08T07:34:40.159792+00:00",
+  "generated_at": "2026-11-08T07:41:59.203924+00:00",
   "country": "ID",
   "source": "https://github.com/iptv-org/api",
   "channels_with_streams": 128,
   "candidate_streams": 200,
   "declared_hd_streams_720p_plus": 126,
-  "http_reachable_streams": 115,
+  "http_reachable_streams": 116,
   "health_counts": {
     "unreachable": 47,
-    "offline": 38,
-    "online": 115
+    "offline": 37,
+    "online": 116
   },
   "hls_validation_counts": {
-    "not_checked": 85,
-    "segment_ok": 101,
-    "failed": 12,
+    "not_checked": 84,
+    "segment_ok": 105,
+    "failed": 9,
     "not_hls": 2
   },
-  "hls_segment_verified_streams": 101,
+  "hls_segment_verified_streams": 105,
   "notes": [
     "HLS validation checks a manifest and one sample media segment; it is not a continuous playback or bitrate test.",
     "Quality is based on source metadata/title, not measured bitrate or decoded resolution.",
@@ -190,8 +190,8 @@
       "quality": null,
       "url": "https://video.detik.com/livecnn/smil:cnntv/chunklist_w268557525_b384000_sleng.m3u8",
       "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error _ssl.c:994: The handshake operation timed out>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Huma Betang TV",
@@ -1036,8 +1036,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Jogja Istimewa TV",
@@ -1342,8 +1342,8 @@
       "quality": "480p",
       "url": "https://www.streaming.radartv.co.id/hls/test.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "Radar Tasikmalaya TV",
@@ -1943,7 +1943,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Sulbar/hls/Sulbar.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",

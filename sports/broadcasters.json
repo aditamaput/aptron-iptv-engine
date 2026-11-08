@@ -1,0 +1,406 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-08",
+  "purpose": "Research index of official football broadcast-rights partners. This is not a stream URL list and does not imply that a channel is free-to-air or globally accessible.",
+  "policy": {
+    "include": "Officially announced live-rights partners and channels/platforms named by the competition owner.",
+    "exclude": "Pirated feeds, leaked credentials, DRM bypass, paywall circumvention, and unverified stream URLs.",
+    "validation": "A broadcaster entry is a discovery lead. Verify current local channel lineup, match schedule, access conditions, and permitted distribution before adding any playable endpoint."
+  },
+  "competitions": [
+    {
+      "id": "premier-league",
+      "name": "Premier League",
+      "rights_period": "2025/26-2027/28",
+      "territories": [
+        {
+          "country": "Indonesia",
+          "partners": [
+            "EMTEK"
+          ],
+          "notes": "Rights-holder group; identify exact linear channel/service per match before cataloguing."
+        },
+        {
+          "country": "Australia",
+          "partners": [
+            "Stan Sport"
+          ]
+        },
+        {
+          "country": "China",
+          "partners": [
+            "Migu"
+          ]
+        },
+        {
+          "country": "Hong Kong",
+          "partners": [
+            "PCCW"
+          ]
+        },
+        {
+          "country": "Japan",
+          "partners": [
+            "U-NEXT"
+          ]
+        },
+        {
+          "country": "Malaysia",
+          "partners": [
+            "Astro"
+          ]
+        },
+        {
+          "country": "New Zealand",
+          "partners": [
+            "Sky NZ"
+          ]
+        },
+        {
+          "country": "Singapore",
+          "partners": [
+            "StarHub"
+          ]
+        },
+        {
+          "country": "South Korea",
+          "partners": [
+            "Coupang"
+          ]
+        },
+        {
+          "country": "South Asia",
+          "partners": [
+            "JioStar"
+          ]
+        },
+        {
+          "country": "Thailand",
+          "partners": [
+            "Jasmine International / Mono"
+          ]
+        },
+        {
+          "country": "Vietnam",
+          "partners": [
+            "FPT Play via Jasmine International / Mono"
+          ]
+        },
+        {
+          "country": "Cambodia",
+          "partners": [
+            "Jasmine International / Mono"
+          ]
+        },
+        {
+          "country": "Laos",
+          "partners": [
+            "Jasmine International / Mono"
+          ]
+        },
+        {
+          "country": "United Kingdom",
+          "partners": [
+            "Sky Sports",
+            "TNT Sports"
+          ]
+        },
+        {
+          "country": "Germany",
+          "partners": [
+            "Sky Deutschland"
+          ]
+        },
+        {
+          "country": "France",
+          "partners": [
+            "CANAL+"
+          ]
+        },
+        {
+          "country": "Italy",
+          "partners": [
+            "Sky Italia"
+          ]
+        },
+        {
+          "country": "Spain",
+          "partners": [
+            "DAZN"
+          ]
+        },
+        {
+          "country": "Netherlands",
+          "partners": [
+            "Viaplay"
+          ]
+        },
+        {
+          "country": "Nordic region",
+          "partners": [
+            "Viaplay"
+          ]
+        },
+        {
+          "country": "Turkey",
+          "partners": [
+            "beIN Sports"
+          ]
+        },
+        {
+          "country": "MENA",
+          "partners": [
+            "beIN Sports"
+          ]
+        },
+        {
+          "country": "Sub-Saharan Africa",
+          "partners": [
+            "SuperSport"
+          ]
+        },
+        {
+          "country": "Brazil",
+          "partners": [
+            "ESPN"
+          ]
+        },
+        {
+          "country": "South America",
+          "partners": [
+            "ESPN"
+          ]
+        },
+        {
+          "country": "United States",
+          "partners": [
+            "NBC Sports"
+          ]
+        },
+        {
+          "country": "Canada",
+          "partners": [
+            "Fubo"
+          ]
+        },
+        {
+          "country": "Mexico and Central America",
+          "partners": [
+            "Fox",
+            "TNT Sports Mexico"
+          ]
+        }
+      ],
+      "source": "https://www.premierleague.com/en/news/3703577/premier-league-broadcast-deals-for-2025-2028"
+    },
+    {
+      "id": "uefa-champions-league",
+      "name": "UEFA Champions League",
+      "rights_period": "2026/27",
+      "territories": [
+        {
+          "country": "Indonesia",
+          "partners": [
+            "beIN",
+            "SCTV"
+          ]
+        },
+        {
+          "country": "Malaysia",
+          "partners": [
+            "beIN"
+          ]
+        },
+        {
+          "country": "Singapore",
+          "partners": [
+            "beIN"
+          ]
+        },
+        {
+          "country": "Thailand",
+          "partners": [
+            "beIN"
+          ]
+        },
+        {
+          "country": "Philippines",
+          "partners": [
+            "beIN"
+          ]
+        },
+        {
+          "country": "Japan",
+          "partners": [
+            "WOWOW",
+            "Lemino (highlights only)",
+            "U-NEXT (highlights only)"
+          ]
+        },
+        {
+          "country": "South Korea",
+          "partners": [
+            "SPO TV"
+          ]
+        },
+        {
+          "country": "India",
+          "partners": [
+            "Sony"
+          ]
+        },
+        {
+          "country": "Pakistan",
+          "partners": [
+            "Sony",
+            "Tapmad"
+          ]
+        },
+        {
+          "country": "Bangladesh",
+          "partners": [
+            "Sony",
+            "Tapmad"
+          ]
+        },
+        {
+          "country": "Australia",
+          "partners": [
+            "Stan Sport"
+          ]
+        },
+        {
+          "country": "New Zealand",
+          "partners": [
+            "DAZN"
+          ]
+        },
+        {
+          "country": "China",
+          "partners": [
+            "iQIYI"
+          ]
+        },
+        {
+          "country": "Hong Kong",
+          "partners": [
+            "beIN"
+          ]
+        },
+        {
+          "country": "MENA",
+          "partners": [
+            "beIN"
+          ]
+        },
+        {
+          "country": "South Africa",
+          "partners": [
+            "SuperSport"
+          ]
+        },
+        {
+          "country": "Sub-Saharan Africa",
+          "partners": [
+            "SuperSport",
+            "Canal+",
+            "New World TV"
+          ]
+        },
+        {
+          "country": "United Kingdom",
+          "partners": [
+            "TNT Sports",
+            "Amazon Prime"
+          ]
+        },
+        {
+          "country": "Germany",
+          "partners": [
+            "DAZN",
+            "Amazon Prime"
+          ]
+        },
+        {
+          "country": "France",
+          "partners": [
+            "Canal+"
+          ]
+        },
+        {
+          "country": "Italy",
+          "partners": [
+            "Sky",
+            "Amazon Prime"
+          ]
+        },
+        {
+          "country": "Spain",
+          "partners": [
+            "Telefonica"
+          ]
+        },
+        {
+          "country": "Netherlands",
+          "partners": [
+            "Ziggo Sport"
+          ]
+        },
+        {
+          "country": "Portugal",
+          "partners": [
+            "Sport TV",
+            "DAZN",
+            "LiveMode"
+          ]
+        },
+        {
+          "country": "United States",
+          "partners": [
+            "Paramount+",
+            "TUDN",
+            "DAZN"
+          ]
+        },
+        {
+          "country": "Canada",
+          "partners": [
+            "DAZN",
+            "OneSoccer"
+          ]
+        },
+        {
+          "country": "Brazil",
+          "partners": [
+            "TNT Sports",
+            "SBT"
+          ]
+        },
+        {
+          "country": "South America excluding Brazil",
+          "partners": [
+            "ESPN"
+          ]
+        },
+        {
+          "country": "Mexico",
+          "partners": [
+            "Max",
+            "FOX"
+          ]
+        }
+      ],
+      "source": "https://www.uefa.com/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-games/",
+      "notes": "UEFA marks some partners with an asterisk for highlights-only rights. This catalogue preserves those qualifiers where specified."
+    }
+  ],
+  "next_research_targets": [
+    "Domestic leagues and cups by country (not only UEFA competitions)",
+    "AFC Champions League Elite and AFC competitions",
+    "CAF competitions and national-team football",
+    "CONCACAF competitions and MLS",
+    "CONMEBOL Libertadores and Sudamericana",
+    "Women’s football and youth competitions",
+    "Free-to-air public broadcasters with selected live matches"
+  ]
+}

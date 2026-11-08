@@ -1,0 +1,2165 @@
+{
+  "generated_at": "2026-11-08T06:23:26.848586+00:00",
+  "country": "ID",
+  "source": "https://github.com/iptv-org/api",
+  "channels_with_streams": 128,
+  "candidate_streams": 200,
+  "declared_hd_streams_720p_plus": 126,
+  "http_reachable_streams": 116,
+  "health_counts": {
+    "unreachable": 46,
+    "offline": 38,
+    "online": 116
+  },
+  "notes": [
+    "Quality is based on source metadata/title, not measured bitrate or decoded resolution.",
+    "HTTP reachability does not guarantee playback; HLS segments, geo restrictions and app compatibility are not fully tested.",
+    "Only publicly listed HTTP(S) feeds are collected. DRM, paywall, login and access-control bypass are not attempted."
+  ],
+  "streams": [
+    {
+      "channel": "Biznet Kids",
+      "channel_id": "BiznetKids.id",
+      "title": "Biznet Kids",
+      "quality": "1080p",
+      "url": "http://livestream.biznetvideo.net/biznet_kids/smil:kids.smil/index.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "channel": "Kids TV",
+      "channel_id": "KidsTV.id",
+      "title": "Kids TV",
+      "quality": null,
+      "url": "http://origin5.mediacdn.ru/live/kidstv/index.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 503"
+    },
+    {
+      "channel": "My Kidz",
+      "channel_id": "MyKidz.id",
+      "title": "My Kidz",
+      "quality": "720p",
+      "url": "https://cdn10jtedge.indihometv.com/atm/DASH/mykids/manifest.mpd",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 403"
+    },
+    {
+      "channel": "My Kidz",
+      "channel_id": "MyKidz.id",
+      "title": "My Kidz",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h191/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "VTV",
+      "channel_id": "VTV.id",
+      "title": "VTV HD",
+      "quality": "1080p",
+      "url": "http://202.150.172.59/VTVHD/index.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
+    },
+    {
+      "channel": "VTV",
+      "channel_id": "VTV.id",
+      "title": "VTV HD",
+      "quality": "1080p",
+      "url": "http://ikitv.sqn.at:8000/play/a023/index.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "VTV",
+      "channel_id": "VTV.id",
+      "title": "VTV",
+      "quality": "720p",
+      "url": "https://flv.intechmedia.net/live/ch107.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "BeritaSatu",
+      "channel_id": "BeritaSatu.id",
+      "title": "BeritaSatu",
+      "quality": "1080p",
+      "url": "https://xtdslboppkkv-pull.bpmedialive.com/live/beritasatu/abr.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "channel": "BeritaSatu",
+      "channel_id": "BeritaSatu.id",
+      "title": "Berita Satu",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h209/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "BN Channel",
+      "channel_id": "BNChannel.id",
+      "title": "BN Channel",
+      "quality": "1080p",
+      "url": "http://ikitv.sqn.at:8000/play/a01l/index.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "BN Channel",
+      "channel_id": "BNChannel.id",
+      "title": "BN Channel",
+      "quality": "720p",
+      "url": "https://flv.intechmedia.net/live/ch112.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "BN Channel",
+      "channel_id": "BNChannel.id",
+      "title": "BN Channel",
+      "quality": "576i",
+      "url": "http://175.158.57.130:8888/stream/channelid/1402218159",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
+    },
+    {
+      "channel": "BTV",
+      "channel_id": "BTV.id",
+      "title": "BTV",
+      "quality": "1080p",
+      "url": "https://lnd0t3b922.tenbytecdn.com/ta-sg1/90369cf5-6ac2-411d-b3d0-15fae10a2e2c/master.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "BTV",
+      "channel_id": "BTV.id",
+      "title": "BTV",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h129/S4/mnf.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "BTV",
+      "channel_id": "BTV.id",
+      "title": "BTV",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h210/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "CNN Indonesia",
+      "channel_id": "CNNIndonesia.id",
+      "title": "CNN Indonesia",
+      "quality": null,
+      "url": "https://video.detik.com/livecnn/smil:cnntv/chunklist_w268557525_b384000_sleng.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Huma Betang TV",
+      "channel_id": "HumaBetangTV.id",
+      "title": "Huma Betang TV",
+      "quality": "720p",
+      "url": "https://v3.siar.us/humabetangtv/live/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Kompas TV",
+      "channel_id": "KompasTV.id",
+      "title": "Kompas TV",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h234/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Kompas TV",
+      "channel_id": "KompasTV.id",
+      "title": "Kompas TV",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/s/s104/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Lingkar TV",
+      "channel_id": "LingkarTV.id",
+      "title": "Lingkar TV",
+      "quality": null,
+      "url": "https://lingkartv.my.id/hls/lingkartv.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Metro TV",
+      "channel_id": "MetroTV.id",
+      "title": "Metro TV",
+      "quality": null,
+      "url": "https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Suara Surabaya Visual Radio",
+      "channel_id": "SuaraSurabayaVisualRadio.id",
+      "title": "Suara Surabaya Visual Radio",
+      "quality": "720p",
+      "url": "https://ssfm.siar.us/ssfm/live/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "CNBC Indonesia",
+      "channel_id": "CNBCIndonesia.id",
+      "title": "CNBC Indonesia",
+      "quality": null,
+      "url": "https://video.detik.com/livecnbc/smil:cnbctv/chunklist_w1279679883_b384000_sleng.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Salira TV",
+      "channel_id": "SaliraTV.id",
+      "title": "Salira TV",
+      "quality": "720p",
+      "url": "https://live.salira.tv/p/3870/hybrid/play.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Salira TV",
+      "channel_id": "SaliraTV.id",
+      "title": "Salira TV",
+      "quality": "720p",
+      "url": "https://live.salira.tv:3870/stream/play.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "The Indonesia Channel",
+      "channel_id": "TheIndonesiaChannel.id",
+      "title": "The Indonesia Channel",
+      "quality": "1080p",
+      "url": "https://restreamer.indonusa.id:8443/d5f4ad43-1b5a-4b0f-8bef-5b37224ed221.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Dens Knowledge",
+      "channel_id": "DensKnowledge.id",
+      "title": "Dens Learning & Knowledge",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h236/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Rinjani TV",
+      "channel_id": "RinjaniTV.id",
+      "title": "Rinjani TV",
+      "quality": null,
+      "url": "https://rinjanitv.cloud/hls/tvkabel.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "My Cinema",
+      "channel_id": "MyCinema.id",
+      "title": "My Cinema",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h192/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Biznet Lifestyle",
+      "channel_id": "BiznetLifestyle.id",
+      "title": "Biznet Lifestyle",
+      "quality": "1080p",
+      "url": "http://livestream.biznetvideo.net/biznet_lifestyle/smil:lifestyle.smil/index.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "channel": "Dens Life & Style",
+      "channel_id": "DensLifeStyle.id",
+      "title": "Dens Life & Style",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h222/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Dens Play",
+      "channel_id": "DensPlay.id",
+      "title": "Dens Play",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h225/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Dens Play",
+      "channel_id": "DensPlay.id",
+      "title": "Dens Play",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h246/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Dens ShowBiz",
+      "channel_id": "DensShowBiz.id",
+      "title": "Dens ShowBiz",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h203/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Dens ShowBiz",
+      "channel_id": "DensShowBiz.id",
+      "title": "Dens ShowBiz",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h244/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Ficom Channel",
+      "channel_id": "FicomChannel.id",
+      "title": "Ficom Channel",
+      "quality": "720p",
+      "url": "https://v3.siar.us/ficomchannel/live/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Indonesiana.TV",
+      "channel_id": "IndonesianaTV.id",
+      "title": "Indonesiana.TV",
+      "quality": "720p",
+      "url": "https://tvstreamcast.com/indonesiana.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "My Family",
+      "channel_id": "MyFamily.id",
+      "title": "My Family",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h194/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Dens Food Channel",
+      "channel_id": "DensFoodChannel.id",
+      "title": "Dens Food Channel",
+      "quality": null,
+      "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h221/02.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Dens Food Channel",
+      "channel_id": "DensFoodChannel.id",
+      "title": "Dens Food Channel",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h221/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Music Information Channel",
+      "channel_id": "MusicInformationChannel.id",
+      "title": "Music Information Channel",
+      "quality": "720p",
+      "url": "https://mic.siar.us/mic/live/mic.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI Sport",
+      "channel_id": "TVRISport.id",
+      "title": "TVRI Sport",
+      "quality": "1080p",
+      "url": "http://202.150.172.59/TVRISport/index.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
+    },
+    {
+      "channel": "TVRI Sport",
+      "channel_id": "TVRISport.id",
+      "title": "TVRI Sport",
+      "quality": null,
+      "url": "https://op-group1-swiftservesd-1.dens.tv/s/s107/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "MBG TV",
+      "channel_id": "MBGTV.id",
+      "title": "MBG TV",
+      "quality": "1080p",
+      "url": "https://stream.convergen.co/mbg_stream/smil:mbStream.smil/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVR Parlemen",
+      "channel_id": "TVRParlemen.id",
+      "title": "TVR Parlemen",
+      "quality": "720p",
+      "url": "http://103.18.181.69:1935/golive/livestream/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "channel": "TVR Parlemen",
+      "channel_id": "TVRParlemen.id",
+      "title": "TVR Parlemen",
+      "quality": "720p",
+      "url": "https://ssv1.dpr.go.id/golive/livestream/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "channel": "Ahsan TV",
+      "channel_id": "AhsanTV.id",
+      "title": "Ahsan TV",
+      "quality": null,
+      "url": "https://5bf7b725107e5.streamlock.net/ahsantv/ahsantv/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Al Wafa Tarim",
+      "channel_id": "AlWafaTarim.id",
+      "title": "Alwafa Tarim TV (Am Media)",
+      "quality": "720p",
+      "url": "https://ammedia.siar.us/ammedia/live/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; text/plain"
+    },
+    {
+      "channel": "Al-Bahjah TV",
+      "channel_id": "AlBahjahTV.id",
+      "title": "Al-Bahjah TV",
+      "quality": "1080p",
+      "url": "http://202.150.161.117:8000/play/AlBahjahTV",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/octet-stream"
+    },
+    {
+      "channel": "Al-Iman TV",
+      "channel_id": "AlImanTV.id",
+      "title": "Al-Iman TV",
+      "quality": "720p",
+      "url": "https://tv.aliman.id/aliman/live.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Ashiil TV",
+      "channel_id": "AshiilTV.id",
+      "title": "Ashiil TV",
+      "quality": "480p",
+      "url": "https://5bf7b725107e5.streamlock.net/ashiiltv/ashiiltv/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Ashiil TV",
+      "channel_id": "AshiilTV.id",
+      "title": "Ashiil TV",
+      "quality": "480p",
+      "url": "https://wahyu1ptv.pages.dev/AshiilTV-HD.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "DAAI TV",
+      "channel_id": "DAAITV.id",
+      "title": "DAAI TV",
+      "quality": null,
+      "url": "https://op-group1-swiftservesd-1.dens.tv/s/s182/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "DAAI TV",
+      "channel_id": "DAAITV.id",
+      "title": "DAAI TV",
+      "quality": null,
+      "url": "https://pull.daaiplus.com/live-DAAIPLUS/live-DAAIPLUS_HD.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/x-mpegurl"
+    },
+    {
+      "channel": "Dhamma TV",
+      "channel_id": "DhammaTV.id",
+      "title": "Dhamma TV",
+      "quality": "720p",
+      "url": "https://b.webcache.maxindo.net.id/dhamma/dhamma.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/x-mpegurl"
+    },
+    {
+      "channel": "DMI TV",
+      "channel_id": "DMITV.id",
+      "title": "DMI TV",
+      "quality": "576i",
+      "url": "https://tvstreamcast.com/tawaftv.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Fajar TV",
+      "channel_id": "FajarTV.id",
+      "title": "Fajar TV",
+      "quality": "720p",
+      "url": "http://122.248.43.242:1935/FAJARTV/_definst_/myStream/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "I Am Channel",
+      "channel_id": "IAmChannel.id",
+      "title": "I Am Channel",
+      "quality": "576p",
+      "url": "https://61146e7ab7a66.streamlock.net:8089/tes/1/chunklist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Madani TV",
+      "channel_id": "MadaniTV.id",
+      "title": "Madani TV",
+      "quality": "720p",
+      "url": "https://stream.asianastream.com/madani/madanitv.smil/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "MGI TV",
+      "channel_id": "MGITV.id",
+      "title": "MGI TV",
+      "quality": "720p",
+      "url": "https://tv.rodja.live/tasik/ngrp:mgitv_all/playlist.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
+    },
+    {
+      "channel": "MQTV",
+      "channel_id": "MQTV.id",
+      "title": "MQTV",
+      "quality": "720p",
+      "url": "https://5bf7b725107e5.streamlock.net/mqtv/mqtv/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Naajiya TV",
+      "channel_id": "NaajiyaTV.id",
+      "title": "Naajiya TV",
+      "quality": "720p",
+      "url": "https://www.naajiyatv.com/live/livestream.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Nabawi TV",
+      "channel_id": "NabawiTV.id",
+      "title": "Nabawi TV",
+      "quality": "720p",
+      "url": "http://202.150.161.117:8000/play/NabawiTV",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/octet-stream"
+    },
+    {
+      "channel": "AFBTV Kupang",
+      "channel_id": "AFBTVKupang.id",
+      "title": "AFBTV Kupang",
+      "quality": "1080p",
+      "url": "https://afbtv.siar.us/live/afbtv.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "channel": "Ajwa TV",
+      "channel_id": "AjwaTV.id",
+      "title": "Ajwa TV",
+      "quality": "1080p",
+      "url": "http://ikitv.sqn.at:8000/play/a00j/index.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "AKTV",
+      "channel_id": "AKTV.id",
+      "title": "AKTV",
+      "quality": "1080p",
+      "url": "https://akativi.siar.us/live/akativi.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "ANTV",
+      "channel_id": "ANTV.id",
+      "title": "ANTV",
+      "quality": "720p",
+      "url": "http://103.58.160.157:8278/720-ANTV/playlist.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 401"
+    },
+    {
+      "channel": "Astha TV",
+      "channel_id": "AsthaTV.id",
+      "title": "Astha TV",
+      "quality": "1080p",
+      "url": "https://hgmtv.com:2020/hls/asthalive/asthalive.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Astro Blitar TV",
+      "channel_id": "AstroBlitarTV.id",
+      "title": "Astro Blitar TV",
+      "quality": "720p",
+      "url": "https://5bf7b725107e5.streamlock.net/abtv/abtv/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Atambua TV",
+      "channel_id": "AtambuaTV.id",
+      "title": "Atambua TV",
+      "quality": "720p",
+      "url": "http://122.248.43.242:1935/ATAMBUATV/_definst_/myStream/playlist.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Balikpapan TV",
+      "channel_id": "BalikpapanTV.id",
+      "title": "Balikpapan TV",
+      "quality": "720p",
+      "url": "http://122.248.43.242:1935/BALIKPAPANTV/_definst_/myStream/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Bandung TV",
+      "channel_id": "BandungTV.id",
+      "title": "Bandung TV",
+      "quality": "360p",
+      "url": "http://202.150.153.254:65500/bandungtvWEBSITE.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Banjar TV",
+      "channel_id": "BanjarTV.id",
+      "title": "Banjar TV",
+      "quality": "720p",
+      "url": "https://banjartv.siar.us/banjartv/live/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Banten TV",
+      "channel_id": "BantenTV.id",
+      "title": "Banten TV",
+      "quality": "720p",
+      "url": "https://5bf7b725107e5.streamlock.net/bantentv/bantentv/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Batam TV",
+      "channel_id": "BatamTV.id",
+      "title": "Batam TV",
+      "quality": "480p",
+      "url": "http://122.248.43.242:1935/BATAMTV/_definst_/myStream/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Biznet Adventure",
+      "channel_id": "BiznetAdventure.id",
+      "title": "Biznet Adventure",
+      "quality": "1080p",
+      "url": "http://livestream.biznetvideo.net/biznet_adventure/smil:adventure.smil/playlist.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "channel": "BMS TV",
+      "channel_id": "BMSTV.id",
+      "title": "Banyumas TV",
+      "quality": "720p",
+      "url": "https://5bf7b725107e5.streamlock.net/bmstv/bmstv/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "BRTV",
+      "channel_id": "BRTV.id",
+      "title": "BRTV",
+      "quality": "720p",
+      "url": "https://5bf7b725107e5.streamlock.net/brtv/brtv/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Bungo TV",
+      "channel_id": "BungoTV.id",
+      "title": "Bungo TV",
+      "quality": "480p",
+      "url": "https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Caruban TV",
+      "channel_id": "CarubanTV.id",
+      "title": "Caruban TV",
+      "quality": "1080p",
+      "url": "https://stream.carubantv.id/hls/0/stream.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/x-mpegurl"
+    },
+    {
+      "channel": "Channel Jowo",
+      "channel_id": "ChannelJowo.id",
+      "title": "Channel Jowo",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h77/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Davika TV",
+      "channel_id": "DavikaTV.id",
+      "title": "Davika TV",
+      "quality": "480p",
+      "url": "https://5bf7b725107e5.streamlock.net/davika/davika/playlist.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Dhoho TV",
+      "channel_id": "DhohoTV.id",
+      "title": "Dhoho TV",
+      "quality": "720p",
+      "url": "https://dhohotv.siar.us/dhohotv/live/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "dTVi",
+      "channel_id": "dTVi.id",
+      "title": "dTVi",
+      "quality": null,
+      "url": "https://e.siar.us/live/dtvi.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Duta TV",
+      "channel_id": "DutaTV.id",
+      "title": "Duta TV",
+      "quality": "360p",
+      "url": "https://dutatv.siar.us/dutatv/live/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Efarina TV",
+      "channel_id": "EfarinaTV.id",
+      "title": "Efarina TV",
+      "quality": "720p",
+      "url": "https://live.efarinatv.com/hls/bgtaufikganteng.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Garuda TV",
+      "channel_id": "GarudaTV.id",
+      "title": "Garuda TV",
+      "quality": "1080p",
+      "url": "https://hgmtv.com:19360/garudatvlivestreaming/garudatvlivestreaming.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "GTV",
+      "channel_id": "GTV.id",
+      "title": "GTV HD",
+      "quality": "1080p",
+      "url": "http://202.150.172.59/GTVHD/index.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
+    },
+    {
+      "channel": "GTV",
+      "channel_id": "GTV.id",
+      "title": "GTV HD",
+      "quality": null,
+      "url": "https://mncmedia.malingtv.workers.dev/gtv.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Indosiar",
+      "channel_id": "Indosiar.id",
+      "title": "Indosiar HD",
+      "quality": "1080p",
+      "url": "http://202.150.172.59/Indosiar/index.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
+    },
+    {
+      "channel": "Jak TV",
+      "channel_id": "JakTV.id",
+      "title": "Jak TV",
+      "quality": null,
+      "url": "https://op-group1-swiftservesd-1.dens.tv/s/s123/index2.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Jambi TV",
+      "channel_id": "JambiTV.id",
+      "title": "Jambi TV",
+      "quality": null,
+      "url": "https://jambitv.globaldigitalcore.com/hls/sah5tu7Eiveepohyieyie3OoteL2anga.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Jawa Pos TV",
+      "channel_id": "JawaPosTV.id",
+      "title": "Jawa Pos TV Jakarta",
+      "quality": "720p",
+      "url": "http://122.248.43.242:1935/JAWAPOSTVJKT/_definst_/myStream/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Jek TV",
+      "channel_id": "JekTV.id",
+      "title": "Jek TV",
+      "quality": "720p",
+      "url": "http://27.124.81.245:1935/jektv/myStream/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Jogja Istimewa TV",
+      "channel_id": "JogjaIstimewaTV.id",
+      "title": "Jogja Istimewa TV",
+      "quality": "720p",
+      "url": "http://103.255.15.222:1935/tv/jitv_720p/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Jogja TV",
+      "channel_id": "JogjaTV.id",
+      "title": "Jogja TV",
+      "quality": "720p",
+      "url": "https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)>"
+    },
+    {
+      "channel": "JTV",
+      "channel_id": "JTV.id",
+      "title": "JTV Kediri",
+      "quality": "1080p",
+      "url": "http://122.248.43.242:1935/JTVKEDIRI/_definst_/myStream/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "JTV",
+      "channel_id": "JTV.id",
+      "title": "JTV Madiun",
+      "quality": "720p",
+      "url": "http://122.248.43.242:1935/JTVMADIUN/_definst_/myStream/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "JTV",
+      "channel_id": "JTV.id",
+      "title": "JTV",
+      "quality": "720p",
+      "url": "http://122.248.43.242:1935/JTVSURABAYA/_definst_/myStream/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "JTV",
+      "channel_id": "JTV.id",
+      "title": "JTV Madura",
+      "quality": "480p",
+      "url": "http://122.248.43.242:1935/JTVMADURA/_definst_/myStream/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "JTV",
+      "channel_id": "JTV.id",
+      "title": "JTV Malang",
+      "quality": "480p",
+      "url": "http://122.248.43.242:1935/JTVMALANG/_definst_/myStream/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Kawanua TV",
+      "channel_id": "KawanuaTV.id",
+      "title": "Kawanua TV",
+      "quality": "720p",
+      "url": "http://122.248.43.242:1935/KAWANUATV/_definst_/myStream/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Kilisuci TV",
+      "channel_id": "KilisuciTV.id",
+      "title": "Kilisuci TV",
+      "quality": null,
+      "url": "https://5bf7b725107e5.streamlock.net/kstv/kstv/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "KTV",
+      "channel_id": "KTV.id",
+      "title": "KTV",
+      "quality": "720p",
+      "url": "https://flv.intechmedia.net/live/ch118.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Madu TV",
+      "channel_id": "MaduTV.id",
+      "title": "Madu TV",
+      "quality": "1080p",
+      "url": "https://re1.siar.us/madutv/hd720/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Magna Channel",
+      "channel_id": "MagnaChannel.id",
+      "title": "Magna Channel",
+      "quality": "1080p",
+      "url": "http://202.150.172.59/MagnaChannel/index.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
+    },
+    {
+      "channel": "Magna Channel",
+      "channel_id": "MagnaChannel.id",
+      "title": "Magna Channel",
+      "quality": "1080p",
+      "url": "https://edge.medcom.id/live-edge/smil:magna.smil/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Magna Channel",
+      "channel_id": "MagnaChannel.id",
+      "title": "Magna Channel",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h24/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Matrix TV Yogyakarta",
+      "channel_id": "MatrixTVYogyakarta.id",
+      "title": "Matrix TV Yogyakarta",
+      "quality": "720p",
+      "url": "https://stream.matrixtv.id/hls/0/stream.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "channel": "MDTV",
+      "channel_id": "MDTV.id",
+      "title": "MDTV",
+      "quality": "1080p",
+      "url": "https://wahyu1ptv.pages.dev/MDTV-HD.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "MDTV",
+      "channel_id": "MDTV.id",
+      "title": "MDTV",
+      "quality": "720p",
+      "url": "http://ikitv.sqn.at:8000/play/a044/index.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "MDTV",
+      "channel_id": "MDTV.id",
+      "title": "MDTV",
+      "quality": "720p",
+      "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h223/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "MGSTV",
+      "channel_id": "MGSTV.id",
+      "title": "MGSTV",
+      "quality": "360p",
+      "url": "https://mgstv.siar.us/live/mgstv.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Moji",
+      "channel_id": "Moji.id",
+      "title": "Moji",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h207/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Nusantara TV",
+      "channel_id": "NusantaraTV.id",
+      "title": "Nusantara TV",
+      "quality": "1080p",
+      "url": "https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Nusantara TV",
+      "channel_id": "NusantaraTV.id",
+      "title": "Nusantara TV",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h37/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Online TV Nusantara",
+      "channel_id": "OnlineTVNusantara.id",
+      "title": "Online TV Nusantara",
+      "quality": "720p",
+      "url": "https://5bf7b725107e5.streamlock.net/onlinetvnusantara/onlinetvnusantara/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Padang TV",
+      "channel_id": "PadangTV.id",
+      "title": "Padang TV",
+      "quality": "720p",
+      "url": "http://122.248.43.242:1935/PADANGTV/_definst_/myStream/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "PKTV",
+      "channel_id": "PKTV.id",
+      "title": "PKTV",
+      "quality": "480p",
+      "url": "https://streaming.id18.tunnel.my.id/hls/stream.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "PONTV",
+      "channel_id": "PONTV.id",
+      "title": "PONTV",
+      "quality": "720p",
+      "url": "http://122.248.43.242:1935/PONTV/_definst_/myStream/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Puja TV Aceh",
+      "channel_id": "PujaTVAceh.id",
+      "title": "Puja TV Aceh",
+      "quality": "1080p",
+      "url": "https://pujatv.siar.us/live/pujatv.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Radar Lampung TV",
+      "channel_id": "RadarLampungTV.id",
+      "title": "Radar Lampung TV",
+      "quality": "480p",
+      "url": "https://www.streaming.radartv.co.id/hls/test.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Radar Tasikmalaya TV",
+      "channel_id": "RadarTasikmalayaTV.id",
+      "title": "Radar Tasikmalaya TV",
+      "quality": "720p",
+      "url": "https://v2.siar.us/radartasikmalaya/live/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "RBTV Jogja",
+      "channel_id": "RBTVJogja.id",
+      "title": "RBTV Jogja",
+      "quality": "1080p",
+      "url": "https://official.rbtvjogja.tv/live/mychannel.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "offline",
+      "detail": "HTTP 502"
+    },
+    {
+      "channel": "RCTI",
+      "channel_id": "RCTI.id",
+      "title": "RCTI HD",
+      "quality": "1080p",
+      "url": "http://202.150.172.59/RCTIHD/index.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
+    },
+    {
+      "channel": "RCTI",
+      "channel_id": "RCTI.id",
+      "title": "RCTI HD",
+      "quality": "720p",
+      "url": "https://mncmedia.malingtv.workers.dev/rcti.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 451"
+    },
+    {
+      "channel": "RCTV",
+      "channel_id": "RCTV.id",
+      "title": "RCTV",
+      "quality": "720p",
+      "url": "https://v10.siar.us/rctv/live/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Riau TV",
+      "channel_id": "RiauTV.id",
+      "title": "Riau TV",
+      "quality": "1080p",
+      "url": "http://122.248.43.242:1935/RIAUTV/_definst_/myStream/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Rodja TV",
+      "channel_id": "RodjaTV.id",
+      "title": "Rodja TV",
+      "quality": "720p",
+      "url": "https://rodjatv.com/rodjatv/live.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Rodja TV",
+      "channel_id": "RodjaTV.id",
+      "title": "Rodja TV",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h233/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "RRI Net",
+      "channel_id": "RRINet.id",
+      "title": "RRI Net",
+      "quality": "1080p",
+      "url": "https://private-streaming.rri.go.id/memfs/6f77c7b5-feb2-4935-9f89-e7e9fca0a54a_output_0.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Salam TV",
+      "channel_id": "SalamTV.id",
+      "title": "Salam TV",
+      "quality": "720p",
+      "url": "https://live.salamtelevisi.com/hls/0/stream.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/x-mpegurl"
+    },
+    {
+      "channel": "Sampit TV",
+      "channel_id": "SampitTV.id",
+      "title": "Sampit TV",
+      "quality": "720p",
+      "url": "https://sampit-tv.siar.us/live/sampit-tv.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Sangaji TV",
+      "channel_id": "SangajiTV.id",
+      "title": "Sangaji TV",
+      "quality": "720p",
+      "url": "https://cdn.adyadigitalteknologi.com:8090/vod/relay.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "SCTV",
+      "channel_id": "SCTV.id",
+      "title": "SCTV",
+      "quality": null,
+      "url": "http://202.150.172.59/SCTV/tracks-v1a1/mono.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
+    },
+    {
+      "channel": "SCTV",
+      "channel_id": "SCTV.id",
+      "title": "SCTV",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h217/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "Selaparang TV",
+      "channel_id": "SelaparangTV.id",
+      "title": "Selaparang TV",
+      "quality": "720p",
+      "url": "https://selaparangtv.siar.us/live/selaparangtv.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Semarang TV",
+      "channel_id": "SemarangTV.id",
+      "title": "Semarang TV",
+      "quality": "720p",
+      "url": "http://116.254.112.74/hls/cakralive.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
+    },
+    {
+      "channel": "Simpang5 TV",
+      "channel_id": "Simpang5TV.id",
+      "title": "Simpang5 TV",
+      "quality": "360p",
+      "url": "http://122.248.43.242:1935/SIMPANG5TV/_definst_/myStream/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "SMTV",
+      "channel_id": "SMTV.id",
+      "title": "SMTV",
+      "quality": "720p",
+      "url": "http://122.248.43.242:1935/SMTV/_definst_/myStream/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "SMTV",
+      "channel_id": "SMTV.id",
+      "title": "SMTV",
+      "quality": "720p",
+      "url": "https://e.siar.us/live/smtv.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Sriwijaya TV",
+      "channel_id": "SriwijayaTV.id",
+      "title": "Sriwijaya TV",
+      "quality": "720p",
+      "url": "https://sriwijayatv.siar.us/live/sriwijayatv.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Stara TV",
+      "channel_id": "StaraTV.id",
+      "title": "Stara TV Bandung",
+      "quality": "1080p",
+      "url": "https://bandung.staratv.id/hls/0/stream.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/x-mpegurl"
+    },
+    {
+      "channel": "Stara TV",
+      "channel_id": "StaraTV.id",
+      "title": "Stara TV Jakarta",
+      "quality": "1080p",
+      "url": "https://jakarta.staratv.id/hls/0/stream.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/x-mpegurl"
+    },
+    {
+      "channel": "Stara TV",
+      "channel_id": "StaraTV.id",
+      "title": "Stara TV Malang",
+      "quality": "1080p",
+      "url": "https://malang.staratv.id/hls/0/stream.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/x-mpegurl"
+    },
+    {
+      "channel": "Stara TV",
+      "channel_id": "StaraTV.id",
+      "title": "Stara TV Bojonegoro",
+      "quality": "720p",
+      "url": "https://bojonegoro.staratv.id/hls/stream.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/x-mpegurl"
+    },
+    {
+      "channel": "Stara TV",
+      "channel_id": "StaraTV.id",
+      "title": "Stara TV Cianjur",
+      "quality": "720p",
+      "url": "https://cianjur.staratv.id/hls/0/stream.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/x-mpegurl"
+    },
+    {
+      "channel": "Stara TV",
+      "channel_id": "StaraTV.id",
+      "title": "Stara TV Parahyangan",
+      "quality": "720p",
+      "url": "https://parahyangan.staratv.id/hls/0/stream.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/x-mpegurl"
+    },
+    {
+      "channel": "Stara TV",
+      "channel_id": "StaraTV.id",
+      "title": "Stara TV",
+      "quality": "720p",
+      "url": "https://stream.staratv.id/hls/0/stream.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/x-mpegurl"
+    },
+    {
+      "channel": "STV",
+      "channel_id": "STV.id",
+      "title": "STV",
+      "quality": "720p",
+      "url": "http://122.248.43.242:1935/SAMARINDATV/_definst_/myStream/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Sultra TV",
+      "channel_id": "SultraTV.id",
+      "title": "Sultra TV",
+      "quality": "720p",
+      "url": "http://122.248.43.242:1935/SULTRATV/_definst_/myStream/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Surau TV",
+      "channel_id": "SurauTV.id",
+      "title": "Surau TV",
+      "quality": "720p",
+      "url": "http://ikitv.sqn.at:8000/play/a00l/index.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Surau TV",
+      "channel_id": "SurauTV.id",
+      "title": "Surau TV",
+      "quality": "720p",
+      "url": "https://surau-tv-rtmp-surautv.ltjafv.easypanel.host/hls/surautv.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Surau TV",
+      "channel_id": "SurauTV.id",
+      "title": "Surau TV",
+      "quality": null,
+      "url": "https://wahyu1ptv.pages.dev/SurauTV-HD.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TATV",
+      "channel_id": "TATV.id",
+      "title": "TATV",
+      "quality": "720p",
+      "url": "https://v2.siar.us/tatv/live.sdp/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Tegar TV Lampung",
+      "channel_id": "TegarTVLampung.id",
+      "title": "Tegar TV Lampung",
+      "quality": "480p",
+      "url": "http://wms.klikhost.com:1935/tegartv/tegartv/playlist.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "Tegar TV Lampung",
+      "channel_id": "TegarTVLampung.id",
+      "title": "Tegar TV Lampung",
+      "quality": "480p",
+      "url": "https://5bf7b725107e5.streamlock.net/tegartv/tegartv/playlist.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "TV 9 Nusantara",
+      "channel_id": "TV9Nusantara.id",
+      "title": "TV9 Nusantara",
+      "quality": "720p",
+      "url": "https://5bf7b725107e5.streamlock.net/tv9/tv9/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TV Mu",
+      "channel_id": "TVMu.id",
+      "title": "TV Mu",
+      "quality": "720p",
+      "url": "https://e.siar.us/live/tvmu.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "TV Tabalong",
+      "channel_id": "TVTabalong.id",
+      "title": "TV Tabalong",
+      "quality": "720p",
+      "url": "https://5bf7b725107e5.streamlock.net/tvtabalong/tvtabalong/playlist.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVKU",
+      "channel_id": "TVKU.id",
+      "title": "TVKU",
+      "quality": "720p",
+      "url": "https://tvku.tv/hlsstream/hls/live.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "tvOne",
+      "channel_id": "tvOne.id",
+      "title": "tvOne",
+      "quality": null,
+      "url": "https://op-group1-swiftservehd-1.dens.tv/h/h40/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI",
+      "quality": "1080p",
+      "url": "http://202.150.172.59/TVRI/index.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI",
+      "quality": "1080i",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI West Papua",
+      "quality": "1080p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Pabar/hls/Pabar.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI North Sulawesi",
+      "quality": "1080p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Sulut/hls/Sulut.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI North Sumatra",
+      "quality": "1080p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Sumut/hls/Sumut.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Aceh",
+      "quality": "720p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Aceh/hls/Aceh.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Jambi",
+      "quality": "720p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Jambi/hls/Jambi.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Jawa Tengah",
+      "quality": "720p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Jateng/hls/Jateng.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Jawa Timur",
+      "quality": "720p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Jatim/hls/Jatim.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Yogyakarta",
+      "quality": "720p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Kalimantan Selatan",
+      "quality": "720p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Kalsel/hls/Kalsel.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Kalimantan Timur",
+      "quality": "720p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Kaltim/hls/Kaltim.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Lampung",
+      "quality": "720p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Lampung/hls/Lampung.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Nusa Tenggara Barat",
+      "quality": "720p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/NTB/hls/NTB.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Riau",
+      "quality": "720p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Riau/hls/Riau.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Sulawesi Barat",
+      "quality": "720p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Sulbar/hls/Sulbar.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Sulawesi Tengah",
+      "quality": "720p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Sulteng/hls/Sulteng.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Sumatera Barat",
+      "quality": "720p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Sumbar/hls/Sumbar.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Jakarta",
+      "quality": "576i",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/DKI/hls/DKI.m3u8",
+      "labels": [
+        "Not 24/7"
+      ],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI",
+      "quality": "480p",
+      "url": "https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "status": "unreachable",
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Maluku",
+      "quality": "480p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Ambon/hls/Ambon.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Bangka Belitung",
+      "quality": "480p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Babel/hls/Babel.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Bali",
+      "quality": "480p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Bali/hls/Bali.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Bengkulu",
+      "quality": "480p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Bengkulu/hls/Bengkulu.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Gorontalo",
+      "quality": "480p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Gorontalo/hls/Gorontalo.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Jawa Barat",
+      "quality": "480p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Jabar/hls/Jabar.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Kalimantan Barat",
+      "quality": "480p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Kalbar/hls/Kalbar.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Kalimantan Tengah",
+      "quality": "480p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Kalteng/hls/Kalteng.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Nusa Tenggara Timur",
+      "quality": "480p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/NTT/hls/NTT.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Papua",
+      "quality": "480p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Papua/hls/Papua.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Sulawesi Selatan",
+      "quality": "480p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Sulsel/hls/Sulsel.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Sulawesi Tenggara",
+      "quality": "480p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Sultra/hls/Sultra.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI",
+      "channel_id": "TVRI.id",
+      "title": "TVRI Sumatera Selatan",
+      "quality": "480p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/Sumsel/hls/Sumsel.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "TVRI World",
+      "channel_id": "TVRIWorld.id",
+      "title": "TVRI World",
+      "quality": "1080p",
+      "url": "https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "U Channel",
+      "channel_id": "UChannel.id",
+      "title": "U Channel",
+      "quality": null,
+      "url": "https://srs.u-channel.tv/live/uchannel-tv.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "UGTV",
+      "channel_id": "UGTV.id",
+      "title": "UGTV",
+      "quality": "720p",
+      "url": "https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "USM TV",
+      "channel_id": "USMTV.id",
+      "title": "USM TV",
+      "quality": "1080p",
+      "url": "https://play.fsa-stream.my.id/hls/siaran.m3u8",
+      "labels": [],
+      "status": "offline",
+      "detail": "HTTP 404"
+    },
+    {
+      "channel": "YOY International",
+      "channel_id": "YOYInternational.id",
+      "title": "YOY International",
+      "quality": "576p",
+      "url": "https://gist.githubusercontent.com/iptvonlinetv/8a6b2f12e5e968537378f1245cea02c9/raw/78bf84476f8e24cc8ea9d5ac24855078c61b18db/udp305.575.530:3030.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; text/plain; charset=utf-8"
+    }
+  ]
+}

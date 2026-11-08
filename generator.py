@@ -73,8 +73,10 @@ def validate_hls(url: str, headers: dict) -> dict:
     from urllib.parse import urljoin
 
     result = {"status": "not_hls", "detail": "Stream is not an HLS playlist"}
+    manifest_headers = dict(headers)
+    manifest_headers.pop("Range", None)
     try:
-        status, content_type, body = fetch_sample(url, headers, 65536)
+        status, content_type, body = fetch_sample(url, manifest_headers, 65536)
         text = body.decode("utf-8", errors="replace")
         if not text.lstrip().startswith("#EXTM3U"):
             return result
@@ -90,7 +92,7 @@ def validate_hls(url: str, headers: dict) -> dict:
                 variants.append((bandwidth, urljoin(url, lines[index + 1])))
         if variants:
             _, playlist_url = max(variants, key=lambda item: item[0])
-            _, _, body = fetch_sample(playlist_url, headers, 65536)
+            _, _, body = fetch_sample(playlist_url, manifest_headers, 65536)
             text = body.decode("utf-8", errors="replace")
             lines = [line.strip() for line in text.splitlines() if line.strip()]
             if not text.lstrip().startswith("#EXTM3U"):

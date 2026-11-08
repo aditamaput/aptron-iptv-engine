@@ -729,17 +729,243 @@
       ],
       "source": "https://www.efl.com/how-to-watch/broadcast-partners/",
       "notes": "Official EFL directory. This is a partner index; it does not guarantee all matches appear on linear TV or that every partner offers free public streams."
+    },
+    {
+      "id": "jleague-2026-27",
+      "name": "Meiji Yasuda J.LEAGUE (J1/J2/J3)",
+      "rights_period": "2026/27",
+      "territories": [
+        {
+          "country": "Worldwide excluding Japan and sold-rights territories",
+          "partners": [
+            "J.LEAGUE International (YouTube)"
+          ],
+          "notes": "Up to four J1 matches per matchweek live with English commentary; check the official schedule and territory eligibility."
+        },
+        {
+          "country": "Thailand",
+          "partners": [
+            "BG SPORTS YouTube"
+          ],
+          "notes": "J1 plus specified J2/J3 club fixtures."
+        },
+        {
+          "country": "Australia",
+          "partners": [
+            "Stan Sport"
+          ],
+          "notes": "J1; four matches per matchweek."
+        },
+        {
+          "country": "Vietnam",
+          "partners": [
+            "VTV"
+          ],
+          "notes": "J1."
+        },
+        {
+          "country": "China",
+          "partners": [
+            "K-BALL",
+            "SUQIU SPORTS"
+          ],
+          "notes": "K-BALL for J1/J2; SUQIU SPORTS for specified J3 coverage."
+        },
+        {
+          "country": "Hong Kong",
+          "partners": [
+            "MyTV Super"
+          ],
+          "notes": "J1."
+        },
+        {
+          "country": "Macau",
+          "partners": [
+            "M Plus"
+          ],
+          "notes": "J1."
+        },
+        {
+          "country": "Brazil",
+          "partners": [
+            "Canal GOAT"
+          ],
+          "notes": "J1 matches of Kashima Antlers only."
+        },
+        {
+          "country": "Turkey",
+          "partners": [
+            "KRT"
+          ],
+          "notes": "J1."
+        }
+      ],
+      "source": [
+        "https://www.jleague.jp/corporate/activities/various_rights/",
+        "https://www.jleague.jp/corporate/en/pressrelease/article/16008"
+      ],
+      "notes": "Official YouTube is a promising authorized public-stream lead, but coverage is capped and excludes Japan and sold-rights territories."
+    },
+    {
+      "id": "roshn-saudi-pro-league-2026-27",
+      "name": "Roshn Saudi Pro League",
+      "rights_period": "2026/27",
+      "territories": [
+        {
+          "country": "MENA",
+          "partners": [
+            "Thmanyah"
+          ],
+          "notes": "Exclusive rights-holder per current league information."
+        },
+        {
+          "country": "East and Southeast Asia",
+          "partners": [
+            "SPOTV"
+          ],
+          "notes": "Partner across much of the region; confirm exact country and match coverage."
+        },
+        {
+          "country": "Americas",
+          "partners": [
+            "FOX"
+          ],
+          "notes": "Partner across much of the Americas; territory and selection vary."
+        },
+        {
+          "country": "Sub-Saharan Africa",
+          "partners": [
+            "ESPN",
+            "New World TV",
+            "StarTimes"
+          ],
+          "notes": "Regional partner network; confirm local schedule."
+        },
+        {
+          "country": "Selected European markets and Australia",
+          "partners": [
+            "DAZN"
+          ],
+          "notes": "Selected territories only."
+        },
+        {
+          "country": "Spain",
+          "partners": [
+            "Movistar+"
+          ],
+          "notes": "Territory-specific."
+        },
+        {
+          "country": "India and South Asia",
+          "partners": [
+            "FanCode"
+          ],
+          "notes": "Territory-specific."
+        },
+        {
+          "country": "16 selected international markets",
+          "partners": [
+            "SPL-owned direct-to-consumer channels"
+          ],
+          "notes": "Pay-per-view or sponsor-supported free access; not universally free."
+        }
+      ],
+      "source": [
+        "https://www.spl.com.sa/en/news/where-to-watch",
+        "https://www.spl.com.sa/en/news/spl-opens-new-route-to-international-fans-with-innovative-distribution-model"
+      ],
+      "notes": "League states 45 international partners across 180+ territories. Older detailed country lists are not treated as current 2026/27 guarantees."
+    },
+    {
+      "id": "a-league-2026-27",
+      "name": "A-League Men and Ninja A-League",
+      "rights_period": "2026/27",
+      "territories": [
+        {
+          "country": "Indonesia, Thailand, Malaysia, Singapore, Philippines, Vietnam, Brunei, Cambodia, Laos, Myanmar, Mongolia, Taiwan and Macau",
+          "partners": [
+            "SPOTV SEA"
+          ],
+          "notes": "A-League Men: six matches per round live/delayed; no Ninja A-League coverage listed for this group."
+        },
+        {
+          "country": "All other markets except Australia, New Zealand and listed territories",
+          "partners": [
+            "A-Leagues official YouTube"
+          ],
+          "notes": "All games listed for both competitions; subject to territory exclusions."
+        },
+        {
+          "country": "United States",
+          "partners": [
+            "ESPN"
+          ],
+          "notes": "Six A-League Men and five Ninja A-League games per round live/delayed."
+        },
+        {
+          "country": "Brazil",
+          "partners": [
+            "Canal Gol Brasil"
+          ],
+          "notes": "Up to two A-League Men games and one Ninja A-League game per round."
+        },
+        {
+          "country": "Japan",
+          "partners": [
+            "SPOTV Japan"
+          ],
+          "notes": "Three A-League Men games per round."
+        },
+        {
+          "country": "India, Bangladesh, Sri Lanka and Nepal",
+          "partners": [
+            "FanCode"
+          ],
+          "notes": "Six A-League Men games per round."
+        },
+        {
+          "country": "United Kingdom and Ireland",
+          "partners": [
+            "Warner Bros. Discovery"
+          ],
+          "notes": "Six A-League Men and five Ninja A-League games per round."
+        },
+        {
+          "country": "Middle East and North Africa",
+          "partners": [
+            "Dubai Sports"
+          ],
+          "notes": "Six A-League Men games per round."
+        }
+      ],
+      "source": "https://aleagues.com.au/more/where-to-watch-aleagues-overseas/",
+      "notes": "Official directory gives territory and match-volume detail. YouTube is a public-stream lead only in markets not assigned to a partner."
+    },
+    {
+      "id": "mls-2026",
+      "name": "Major League Soccer (MLS)",
+      "rights_period": "2026 season",
+      "territories": [
+        {
+          "country": "United States and Canada",
+          "partners": [
+            "Apple TV"
+          ],
+          "notes": "Official MLS page lists every 2026 MLS match live, including Leagues Cup and MLS Cup Playoffs, under the Apple TV subscription offer. Confirm service availability locally."
+        }
+      ],
+      "source": "https://www.mlssoccer.com/how-to-watch/",
+      "notes": "Paid streaming service, not a free public IPTV channel or public HLS endpoint."
     }
   ],
   "next_research_targets": [
-    "Domestic leagues and cups by country (not only UEFA competitions)",
-    "AFC Champions League Elite and AFC competitions",
-    "CAF competitions and national-team football",
-    "CONCACAF competitions and MLS",
+    "Liga 1 Indonesia and domestic Asian leagues (K League, Thai League, Malaysia Super League)",
+    "LaLiga, Bundesliga, Serie A, Ligue 1, Eredivisie and Primeira Liga",
+    "Brasileirão, Liga MX and Argentina Primera",
     "CONMEBOL Libertadores and Sudamericana",
-    "Women’s football and youth competitions",
-    "Free-to-air public broadcasters with selected live matches"
+    "CAF club competitions, national leagues and national teams",
+    "Women’s football, youth competitions and free-to-air public broadcasters"
   ],
-  "coverage_status": "expanded-initial-research",
+  "coverage_status": "expanded-domestic-league-research",
   "sources_note": "Competition rights are not interchangeable. One-off finals, selected matchday coverage, highlights-only, in-flight rights and full-season rights are explicitly qualified in notes."
 }

@@ -15,6 +15,10 @@ A broadcaster may hold Premier League rights but not UEFA Champions League right
 - CAF Champions League 2025/26 final: one-off final distribution, not a full-season rights assumption.
 - Concacaf club competitions: United States rights for 2027–2030.
 - English Football League: official international partner directory.
+- J.LEAGUE 2026/27: official international YouTube (up to four J1 matches per matchweek in eligible territories), plus selected territory partners.
+- Roshn Saudi Pro League 2026/27: 45 international partners across 180+ territories; regional partner groups and the league's new 16-market direct-to-consumer model are separately qualified.
+- A-League Men and Ninja A-League 2026/27: detailed official overseas directory, including SPOTV SEA in Indonesia and eligible-market official YouTube coverage.
+- MLS 2026: Apple TV lists every match live; this is a paid streaming service, not a public IPTV feed.
 - Coverage includes selected territories across Asia-Pacific, Europe, Africa/MENA, and the Americas. It is a starting index, not yet an exhaustive list of every country or domestic competition.
 
 ## Files
@@ -40,4 +44,10 @@ A broadcaster may hold Premier League rights but not UEFA Champions League right
 - CAF Champions League 2025/26 final broadcasters: https://www.cafonline.com/en/caf-champions-league/news/over-100-territories-to-broadcast-the-totalenergies-caf-champions-league-202526-finale-in-rabat-on-sunday-including-japan-and-china/
 - Concacaf U.S. rights: https://www.concacaf.com/news/cbs-sports-secures-exclusive-u-s-english-language-rights-for-champions-cup-beginning-in-february
 - EFL broadcast partners: https://www.efl.com/how-to-watch/broadcast-partners/
+- J.LEAGUE rights directory: https://www.jleague.jp/corporate/activities/various_rights/
+- J.LEAGUE overseas 2026/27 announcement: https://www.jleague.jp/corporate/en/pressrelease/article/16008
+- Saudi Pro League where to watch: https://www.spl.com.sa/en/news/where-to-watch
+- Saudi Pro League 16-market distribution model: https://www.spl.com.sa/en/news/spl-opens-new-route-to-international-fans-with-innovative-distribution-model
+- A-Leagues international broadcast partners: https://aleagues.com.au/more/where-to-watch-aleagues-overseas/
+- MLS how to watch: https://www.mlssoccer.com/how-to-watch/
 - FIFA World Cup 2026 broadcast-partner information: https://www.fifa.com/en/ar/mens/worldcup/canadamexicousa2026/articles/where-to-watch-the-schedule-reveal-live-matches

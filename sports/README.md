@@ -22,6 +22,11 @@ A broadcaster may hold Premier League rights but not UEFA Champions League right
 - BRI Super League Indonesia 2026/27: I.League confirms Emtek Group as official broadcaster; Indosiar is a primary channel and Vidio lists the season hub.
 - Thai League 2025/26–2028/29: Gulf/AIS/JAS exclusive domestic partnership, with AIS PLAY and MONO29 named by the FA Thailand.
 - Malaysia League 2026/27–2027/28: Astro continues as official broadcaster, with broadcast and sooka streaming distribution.
+- LALIGA 2026/27: beIN SPORTS in Indonesia and selected Southeast Asian markets; ESPN on Disney+ in four Nordic countries; DAZN across 48 Sub-Saharan African markets.
+- Bundesliga Indonesia 2026/27: MNC, AllPlay Sports/IndiHome TV and MAXstream are recorded as secondary-source leads; verify current fixture/channel allocation with operators.
+- Ligue 1 2026/27: Vidio in Indonesia (all matches reported), with selected regional partners recorded separately.
+- Serie A United States: Paramount+ carries all Serie A matches through 2026/27; selected CBS linear/FAST coverage.
+- CONMEBOL Libertadores Brazil from 2027: Globo/GE TV, SporTV and Paramount+ packages; each package has a limited match count and must not be mistaken for full competition coverage.
 - Coverage includes selected territories across Asia-Pacific, Europe, Africa/MENA, and the Americas. It is a starting index, not yet an exhaustive list of every country or domestic competition.
 
 ## Files
@@ -58,4 +63,13 @@ A broadcaster may hold Premier League rights but not UEFA Champions League right
 - FA Thailand Thai League rights announcement: https://www.fathailand.org/news-detail/m9SZA
 - Astro Malaysia League 2026/27–2027/28 announcement: https://corporate.astro.com.my/mediaroom-releases/astro-continues-its-partnership-liga-malaysia-driving-local-football-forward
 - Bundesliga official broadcaster locator (select territory and fixture): https://www.bundesliga.com/en/bundesliga/info/broadcasters
+- LALIGA official broadcaster locator: https://www.laliga.com/en-US/where-to-watch-laliga-easports
+- beIN SPORTS Southeast Asia LaLiga rights information: https://www.beinsports.com/en-asia/football/articles/laliga-2025-26-how-to-watch-live-bein-sports
+- LALIGA Nordic 2026/27 Disney+/TV2 agreement: https://iaas-public-front-pro.laliga.com/en-US/news/laliga-strengthens-nordic-broadcasting-strategy-with-disney-and-tv2
+- DAZN Sub-Saharan Africa LaLiga rights 2026/27–2028/29: https://dazngroup.com/press-room/dazn-expands-its-global-footprint-in-sub-saharan-africa-bringing-every-laliga-ea-sports-match-to-fans-in-the-region-through-2029/
+- Ligue 1 official broadcaster locator: https://ligue1.com/en/broadcasters
+- Vidio Ligue 1 Matchweek 10 2026/27: https://www.vidio.com/blog/matchweek-10-ligue-1-2026-27/
+- LFP Media 2026/27 Ligue 1 international partner overview: https://football.newstank.ch/article/view/451944/2026-27-ligue-1-mcdonald-s-broadcast-in-215-territories-via-53-partners.html
+- CBS Sports / Lega Serie A U.S. rights through 2026/27: https://www.paramountpressexpress.com/paramount-plus/releases/?view=112947-cbs-sports-and-lega-serie-a-extend-us-media-rights-partnership-through-20262027-season-with-all-matches-to-continue-to-be-streamed-on-paramount
+- CONMEBOL Libertadores Brazil 2027 media-rights packages: https://www.img.com/our-news/conmebol-announces-new-media-rights-agreements-with-globo-sportv-and-paramount
 - FIFA World Cup 2026 broadcast-partner information: https://www.fifa.com/en/ar/mens/worldcup/canadamexicousa2026/articles/where-to-watch-the-schedule-reveal-live-matches

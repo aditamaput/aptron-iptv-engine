@@ -392,6 +392,343 @@
       ],
       "source": "https://www.uefa.com/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-games/",
       "notes": "UEFA marks some partners with an asterisk for highlights-only rights. This catalogue preserves those qualifiers where specified."
+    },
+    {
+      "id": "afc-club-and-national-team-competitions",
+      "name": "AFC competitions (Asian Qualifiers, AFC Asian Cup, AFC Champions League Elite/Two)",
+      "rights_period": "2025-2028 selected media-rights agreements",
+      "territories": [
+        {
+          "country": "South America and Central America",
+          "partners": [
+            "ESPN"
+          ],
+          "notes": "Exclusive AFC media partner for this territory, 2025-2028."
+        },
+        {
+          "country": "Caribbean",
+          "partners": [
+            "ESPN"
+          ],
+          "notes": "Non-exclusive AFC media partner, 2025-2028."
+        },
+        {
+          "country": "Airlines and cruise ships worldwide",
+          "partners": [
+            "Sport 24"
+          ],
+          "notes": "Dedicated in-flight/on-ship live sports channel; agreement through 2028."
+        }
+      ],
+      "source": [
+        "https://www.the-afc.com/en/more/afc_news.html/news/afc-and-espn-renew-media-rights-agreement-in-latin-america-and-the-caribbean",
+        "https://www.the-afc.com/en/more/afc_news.html/news/afc-renews-broadcast-deal-with-sport-24-until-2028"
+      ],
+      "notes": "This is deliberately a partial territory index. Other territories must be researched from current AFC and local broadcaster announcements before assigning a partner."
+    },
+    {
+      "id": "caf-afcon-2027-qualifiers",
+      "name": "TotalEnergies CAF Africa Cup of Nations PAMOJA 2027 qualifiers",
+      "rights_period": "2026 qualifying matches",
+      "territories": [
+        {
+          "country": "MENA and named additional territories",
+          "partners": [
+            "beIN Sports"
+          ],
+          "notes": "CAF identifies beIN as broadcaster for the MENA region and lists additional territories in its announcement; verify exact country availability."
+        },
+        {
+          "country": "French-speaking Sub-Saharan Africa",
+          "partners": [
+            "CANAL+"
+          ],
+          "notes": "CAF states coverage across more than 30 countries in French."
+        },
+        {
+          "country": "South Africa",
+          "partners": [
+            "SABC"
+          ],
+          "notes": "Listed for selected Matchday 1 matches; not a blanket guarantee for every fixture."
+        },
+        {
+          "country": "Tanzania and East Africa",
+          "partners": [
+            "Azam TV"
+          ],
+          "notes": "Listed among FTA/partner broadcasters; exact fixture and territory vary."
+        },
+        {
+          "country": "Morocco",
+          "partners": [
+            "SNRT"
+          ],
+          "notes": "Listed for selected Matchday 1 matches."
+        },
+        {
+          "country": "Egypt",
+          "partners": [
+            "OnTime Sport"
+          ],
+          "notes": "Listed for selected Matchday 1 matches."
+        },
+        {
+          "country": "Cameroon",
+          "partners": [
+            "CRTV"
+          ],
+          "notes": "Listed for selected Matchday 1 matches."
+        },
+        {
+          "country": "DR Congo",
+          "partners": [
+            "RTNC"
+          ],
+          "notes": "Listed for selected Matchday 1 matches."
+        },
+        {
+          "country": "Botswana",
+          "partners": [
+            "Botswana TV"
+          ],
+          "notes": "Listed for selected Matchday 1 matches."
+        },
+        {
+          "country": "Rwanda",
+          "partners": [
+            "RBS"
+          ],
+          "notes": "Listed among additional FTA broadcasters."
+        }
+      ],
+      "source": "https://www.cafonline.com/afcon2025/news/totalenergies-caf-africa-cup-of-nations-pamoja-2027-where-to-watch-matchday-1-of-the-qualifiers/",
+      "notes": "CAF opened a separate Sub-Saharan Africa media-rights tender for AFCON 2027 in August 2026. Treat the list above as matchday-specific broadcaster evidence, not a complete final-rights map for the 2027 finals."
+    },
+    {
+      "id": "caf-champions-league-2025-26-final",
+      "name": "TotalEnergies CAF Champions League 2025/26 Final",
+      "rights_period": "Single final, 24 May 2026",
+      "territories": [
+        {
+          "country": "MENA, Asia, France, United States, South Pacific and additional territories",
+          "partners": [
+            "beIN Sports"
+          ],
+          "notes": "CAF described beIN as a long-term partner covering these broad regions."
+        },
+        {
+          "country": "French-speaking Africa",
+          "partners": [
+            "CANAL+"
+          ],
+          "notes": "Coverage across more than 32 countries."
+        },
+        {
+          "country": "Sub-Saharan Africa",
+          "partners": [
+            "SuperSport"
+          ],
+          "notes": "Coverage across more than 36 countries in English and Portuguese."
+        },
+        {
+          "country": "Southern Africa",
+          "partners": [
+            "SABC"
+          ],
+          "notes": "Named broadcaster for the final."
+        },
+        {
+          "country": "East Africa",
+          "partners": [
+            "Azam TV"
+          ],
+          "notes": "Coverage across more than eight countries."
+        },
+        {
+          "country": "Morocco",
+          "partners": [
+            "SNRT / Arryadia",
+            "beIN Sports"
+          ]
+        },
+        {
+          "country": "United Kingdom",
+          "partners": [
+            "Channel 4"
+          ],
+          "notes": "Free-to-air for the final, including digital platforms."
+        },
+        {
+          "country": "Japan, South Korea and China",
+          "partners": [
+            "DAZN"
+          ],
+          "notes": "CAF announced live coverage of the final in these territories."
+        }
+      ],
+      "source": "https://www.cafonline.com/en/caf-champions-league/news/over-100-territories-to-broadcast-the-totalenergies-caf-champions-league-202526-finale-in-rabat-on-sunday-including-japan-and-china/",
+      "notes": "This entry records a one-off final only. Do not infer the same distribution applies to every CAF Champions League match or future seasons."
+    },
+    {
+      "id": "concacaf-club-competitions-us",
+      "name": "Concacaf Champions Cup, Central American Cup and Caribbean Cup (United States)",
+      "rights_period": "2027-2030",
+      "territories": [
+        {
+          "country": "United States",
+          "partners": [
+            "Paramount+",
+            "CBS Sports Network",
+            "CBS Sports Golazo Network"
+          ],
+          "notes": "Paramount+ streams all matches in English and Spanish. Select matches air on CBS Sports Network; selected free matches on CBS Sports Golazo Network and CBS Sports app."
+        }
+      ],
+      "source": [
+        "https://www.concacaf.com/news/cbs-sports-secures-exclusive-u-s-english-language-rights-for-champions-cup-beginning-in-february",
+        "https://www.concacaf.com/competitions/champions-cup/news/cbs-sports-adds-u-s-spanish-language-rights-for-concacaf-champions-cup-on-paramount"
+      ],
+      "notes": "The Paramount+ agreement covers all 51 Champions Cup matches annually and the other two named men's club competitions. Linear/free-to-air coverage is only selected matches, not the full schedule."
+    },
+    {
+      "id": "english-football-league",
+      "name": "English Football League (EFL)",
+      "rights_period": "Current official partner directory; verify season per territory",
+      "territories": [
+        {
+          "country": "India",
+          "partners": [
+            "FanCode"
+          ]
+        },
+        {
+          "country": "Afghanistan",
+          "partners": [
+            "FanCode",
+            "Ariana TV"
+          ]
+        },
+        {
+          "country": "Bangladesh",
+          "partners": [
+            "FanCode"
+          ]
+        },
+        {
+          "country": "Maldives",
+          "partners": [
+            "FanCode"
+          ]
+        },
+        {
+          "country": "Nepal",
+          "partners": [
+            "DGO Watch"
+          ]
+        },
+        {
+          "country": "Pakistan",
+          "partners": [
+            "FanCode"
+          ]
+        },
+        {
+          "country": "Sri Lanka",
+          "partners": [
+            "FanCode"
+          ]
+        },
+        {
+          "country": "Bhutan",
+          "partners": [
+            "FanCode"
+          ]
+        },
+        {
+          "country": "China",
+          "partners": [
+            "Douyin"
+          ]
+        },
+        {
+          "country": "Hong Kong",
+          "partners": [
+            "TVB"
+          ]
+        },
+        {
+          "country": "Indonesia",
+          "partners": [
+            "IEG"
+          ]
+        },
+        {
+          "country": "Japan",
+          "partners": [
+            "DAZN"
+          ]
+        },
+        {
+          "country": "Malaysia",
+          "partners": [
+            "HypeKartel"
+          ]
+        },
+        {
+          "country": "Singapore",
+          "partners": [
+            "Singtel",
+            "Mediacorp"
+          ]
+        },
+        {
+          "country": "South Korea",
+          "partners": [
+            "Coupang"
+          ]
+        },
+        {
+          "country": "Thailand",
+          "partners": [
+            "Mono"
+          ]
+        },
+        {
+          "country": "Myanmar",
+          "partners": [
+            "Skynet"
+          ]
+        },
+        {
+          "country": "Laos",
+          "partners": [
+            "Unitel"
+          ]
+        },
+        {
+          "country": "Vietnam",
+          "partners": [
+            "SCTV"
+          ]
+        },
+        {
+          "country": "Canada",
+          "partners": [
+            "DAZN"
+          ]
+        },
+        {
+          "country": "United States",
+          "partners": [
+            "CBS",
+            "Paramount+",
+            "CBS Sports Golazo Network"
+          ]
+        }
+      ],
+      "source": "https://www.efl.com/how-to-watch/broadcast-partners/",
+      "notes": "Official EFL directory. This is a partner index; it does not guarantee all matches appear on linear TV or that every partner offers free public streams."
     }
   ],
   "next_research_targets": [
@@ -402,5 +739,7 @@
     "CONMEBOL Libertadores and Sudamericana",
     "Women’s football and youth competitions",
     "Free-to-air public broadcasters with selected live matches"
-  ]
+  ],
+  "coverage_status": "expanded-initial-research",
+  "sources_note": "Competition rights are not interchangeable. One-off finals, selected matchday coverage, highlights-only, in-flight rights and full-season rights are explicitly qualified in notes."
 }

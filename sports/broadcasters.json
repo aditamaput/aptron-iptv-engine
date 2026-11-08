@@ -956,15 +956,76 @@
       ],
       "source": "https://www.mlssoccer.com/how-to-watch/",
       "notes": "Paid streaming service, not a free public IPTV channel or public HLS endpoint."
+    },
+    {
+      "id": "bri-super-league-indonesia-2026-27",
+      "name": "BRI Super League Indonesia",
+      "rights_period": "2026/27",
+      "territories": [
+        {
+          "country": "Indonesia",
+          "partners": [
+            "Emtek Group",
+            "Indosiar",
+            "Vidio"
+          ],
+          "notes": "I.League confirmed Emtek Group as official broadcaster for 2026/27; Indosiar is named as a primary channel and Vidio lists the 2026/27 competition hub. Confirm each fixture's exact TV/stream allocation."
+        }
+      ],
+      "source": [
+        "https://www.ileague.id/news/detail/bri-dan-i-league-perkuat-kolaborasi-untuk-bri-super-league-2026-27--emtek-group-kembali-jadi-official-broadcaster",
+        "https://www.vidio.com/categories/liga-1"
+      ],
+      "notes": "Do not conflate the separate I.League Cup rights with the Super League package; its 2026/27 live distribution is separately announced and may require YouTube membership."
+    },
+    {
+      "id": "thai-league-2025-29",
+      "name": "Thai League competitions (T1/T2/T3, cups, youth and women)",
+      "rights_period": "2025/26-2028/29",
+      "territories": [
+        {
+          "country": "Thailand",
+          "partners": [
+            "Gulf Development",
+            "AIS",
+            "Jasmine International (JAS)",
+            "AIS PLAY",
+            "MONO29"
+          ],
+          "notes": "Exclusive domestic rights partnership for four seasons. The official FA Thailand announcement states AIS PLAY digital platform and MONO29 television; coverage includes Thai League 1/2/3, FA Cup, League Cup, U-21 and women's leagues."
+        }
+      ],
+      "source": [
+        "https://www.fathailand.org/news-detail/m9SZA",
+        "https://www.gulf.co.th/en/newsroom/news-and-activities/470/gulf-ais-and-jas-secure-exclusive-thai-league-broadcast-rights-to-elevate-thai-football-globally"
+      ],
+      "notes": "The partnership includes worldwide rights sales in the tender scope, but this record only names the confirmed domestic distribution. Do not infer international partners."
+    },
+    {
+      "id": "malaysia-league-2026-28",
+      "name": "Malaysia League (Liga Super, FA Cup, Malaysia Cup and MFL Challenge Cup)",
+      "rights_period": "2026/27-2027/28",
+      "territories": [
+        {
+          "country": "Malaysia",
+          "partners": [
+            "Astro",
+            "sooka"
+          ],
+          "notes": "Astro announced on 21 August 2026 that it continues as official broadcaster for the next two seasons, with live HD coverage across its broadcast and streaming platforms."
+        }
+      ],
+      "source": "https://corporate.astro.com.my/mediaroom-releases/astro-continues-its-partnership-liga-malaysia-driving-local-football-forward",
+      "notes": "Current rights term is two seasons from the 2026 announcement; do not reuse the older 2025/26 channel numbers without confirming the current lineup."
     }
   ],
   "next_research_targets": [
-    "Liga 1 Indonesia and domestic Asian leagues (K League, Thai League, Malaysia Super League)",
-    "LaLiga, Bundesliga, Serie A, Ligue 1, Eredivisie and Primeira Liga",
+    "K League (South Korea) and other Asian domestic leagues with official international rights",
+    "LaLiga, Bundesliga, Serie A, Ligue 1, Eredivisie and Primeira Liga by territory",
     "Brasileirão, Liga MX and Argentina Primera",
     "CONMEBOL Libertadores and Sudamericana",
     "CAF club competitions, national leagues and national teams",
-    "Women’s football, youth competitions and free-to-air public broadcasters"
+    "Women’s football, youth competitions and public free-to-air match coverage"
   ],
   "coverage_status": "expanded-domestic-league-research",
   "sources_note": "Competition rights are not interchangeable. One-off finals, selected matchday coverage, highlights-only, in-flight rights and full-season rights are explicitly qualified in notes."

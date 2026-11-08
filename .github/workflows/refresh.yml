@@ -1,6 +1,11 @@
 name: Refresh Indonesia IPTV
 
 on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "playlists/**"
+      - "reports/**"
   schedule:
     - cron: "17 1 * * *"
   workflow_dispatch:

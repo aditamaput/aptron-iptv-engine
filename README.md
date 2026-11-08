@@ -50,6 +50,10 @@ CHECK_STREAMS=false python generator.py
 - A daily schedule is not an uptime guarantee; GitHub Actions can delay scheduled runs. Playlist links remain stable, but contents update only after a successful run and commit.
 - Only use streams you are authorized to access. Publicly reachable does not automatically mean licensed for every use.
 
+## Global football channel research
+
+The initial international football broadcast-rights catalogue is maintained separately from the Indonesian general-TV playlist: [sports/README.md](sports/README.md) and [sports/broadcasters.json](sports/broadcasters.json). Rights are tracked by competition, territory and season; a rights-holder listing is not a public stream URL or proof that a channel is free-to-air. Only add playable endpoints after checking provenance and authorized access.
+
 ## Data sources
 
 - Channels: https://iptv-org.github.io/api/channels.json

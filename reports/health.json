@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T07:47:14.304734+00:00",
+  "generated_at": "2026-11-09T02:20:42.090575+00:00",
   "country": "ID",
   "source": "https://github.com/iptv-org/api",
   "channels_with_streams": 128,
@@ -13,11 +13,11 @@
   },
   "hls_validation_counts": {
     "not_checked": 84,
-    "segment_ok": 104,
-    "failed": 10,
+    "segment_ok": 105,
+    "failed": 9,
     "not_hls": 2
   },
-  "hls_segment_verified_streams": 104,
+  "hls_segment_verified_streams": 105,
   "notes": [
     "HLS validation checks a manifest and one sample media segment; it is not a continuous playback or bitrate test.",
     "Quality is based on source metadata/title, not measured bitrate or decoded resolution.",
@@ -318,8 +318,8 @@
       "quality": null,
       "url": "https://rinjanitv.cloud/hls/tvkabel.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "My Cinema",
@@ -410,8 +410,8 @@
       "quality": "720p",
       "url": "https://v3.siar.us/ficomchannel/live/playlist.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Indonesiana.TV",
@@ -650,8 +650,8 @@
       "quality": "576p",
       "url": "https://61146e7ab7a66.streamlock.net:8089/tes/1/chunklist.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Madani TV",
@@ -878,8 +878,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Caruban TV",
@@ -1508,8 +1508,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Semarang TV",
@@ -1552,8 +1552,8 @@
       "quality": "720p",
       "url": "https://e.siar.us/live/smtv.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Sriwijaya TV",
@@ -1564,8 +1564,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Stara TV",
@@ -1819,7 +1819,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Sulut/hls/Sulut.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1851,7 +1851,7 @@
         "Not 24/7"
       ],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1881,7 +1881,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1921,7 +1921,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/NTB/hls/NTB.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1953,7 +1953,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Sulteng/hls/Sulteng.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1963,7 +1963,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Sumbar/hls/Sumbar.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2017,7 +2017,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Bali/hls/Bali.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2027,7 +2027,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Bengkulu/hls/Bengkulu.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2047,7 +2047,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Jabar/hls/Jabar.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2097,7 +2097,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Sulsel/hls/Sulsel.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2107,7 +2107,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Sultra/hls/Sultra.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2156,8 +2156,8 @@
       "quality": "1080p",
       "url": "https://play.fsa-stream.my.id/hls/siaran.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "YOY International",

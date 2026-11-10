@@ -7,6 +7,8 @@ from __future__ import annotations
 
 import json
 import re
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 import shutil
 import subprocess
 import time
@@ -45,6 +47,23 @@ def _request_sample(url: str, headers: dict, timeout: int, limit: int = 65536):
             response.read(limit),
             response.geturl(),
         )
+
+
+def _retry_delay(exc: HTTPError, fallback: float) -> float:
+    """Honor Retry-After where supplied, with a bounded wait."""
+    value = exc.headers.get("Retry-After") if exc.headers else None
+    if value:
+        try:
+            return min(30.0, max(0.0, float(value)))
+        except ValueError:
+            try:
+                target = parsedate_to_datetime(value)
+                if target.tzinfo is None:
+                    target = target.replace(tzinfo=timezone.utc)
+                return min(30.0, max(0.0, (target - datetime.now(timezone.utc)).total_seconds()))
+            except (TypeError, ValueError, OverflowError):
+                pass
+    return min(30.0, max(0.0, fallback))
 
 
 def _network_error(exc: Exception) -> tuple[str, str]:
@@ -281,7 +300,7 @@ def check_stream(stream: dict, timeout: int = 10, retries: int = 1, retry_backof
             result.update({"http_status": exc.code, "status": _classify_http(exc.code),
                            "detail": f"HTTP {exc.code}"})
             if result["status"] in ("rate_limited", "server_error") and attempt < retries:
-                time.sleep(retry_backoff * (2 ** attempt))
+                time.sleep(_retry_delay(exc, retry_backoff * (2 ** attempt)))
                 continue
             return result
         except (URLError, TimeoutError, OSError) as exc:

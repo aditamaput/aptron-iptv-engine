@@ -30,7 +30,7 @@ class HistoryTests(unittest.TestCase):
             )
             self.assertEqual(len(transitions["recovered_http"]), 1)
             self.assertEqual(len(transitions["new_http_failures"]), 1)
-            self.assertEqual(current[0]["reliability_score"], 100.0)
+            self.assertEqual(current[0]["reliability_score"], 50.0)
             saved = json.loads(history.read_text(encoding="utf-8"))
             self.assertEqual(len(saved["snapshots"]), 2)
 

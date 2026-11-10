@@ -236,15 +236,26 @@ def main():
 
     def order_key(row):
         record = row["record"]
+        hls_current = record.get("hls_status") == "segment_ok"
+        playback_current = record.get("playback_probe", {}).get("status") == "verified"
         return (
             row["group"],
             clean(row["channel"].get("name")).casefold(),
+            -int(record.get("http_reachable", False) and hls_current),
+            -int(playback_current),
             -record.get("reliability_score", 0),
             -row["declared_quality"],
             row["stream"].get("url", ""),
         )
 
     rows.sort(key=order_key)
+    channel_ranks = Counter()
+    for row in rows:
+        channel_id = row["channel"].get("id")
+        channel_ranks[channel_id] += 1
+        rank = channel_ranks[channel_id]
+        row["record"]["channel_rank"] = rank
+        row["record"]["stream_role"] = "primary" if rank == 1 else f"backup_{rank - 1}"
     all_rows = rows
     declared_hd = [row for row in rows if row["declared_quality"] >= 720]
     online = [row for row in rows if row["record"]["http_reachable"]]
@@ -261,11 +272,13 @@ def main():
     ]
     stable = [
         row for row in hls_validated
-        if row["record"].get("consecutive_failed_checks", 0) == 0
-        and row["record"].get("reliability_score", 0) >= 50
+        if row["record"].get("history_observations", 0) >= 3
+        and row["record"].get("consecutive_failed_checks", 0) == 0
+        and row["record"].get("reliability_score", 0) >= 80
     ]
 
-    write_playlist("indonesia-all.m3u", all_rows)\n    write_playlist("indonesia-ranked.m3u", all_rows)
+    write_playlist("indonesia-all.m3u", all_rows)
+    write_playlist("indonesia-ranked.m3u", all_rows)
     write_playlist("indonesia-hd.m3u", declared_hd)
     write_playlist("indonesia-online.m3u", online)
     write_playlist("indonesia-online-hd.m3u", online_declared_hd)
@@ -299,7 +312,8 @@ def main():
         "stable_hls_streams": len(stable),
         "transitions": transitions,
         "playlists": {
-            "all": "playlists/indonesia-all.m3u",\n            "ranked_primary_backup": "playlists/indonesia-ranked.m3u",
+            "all": "playlists/indonesia-all.m3u",
+            "ranked_primary_backup": "playlists/indonesia-ranked.m3u",
             "declared_hd": "playlists/indonesia-hd.m3u",
             "http_reachable": "playlists/indonesia-online.m3u",
             "http_reachable_declared_hd": "playlists/indonesia-online-hd.m3u",
@@ -313,7 +327,9 @@ def main():
             "HLS validation checks a manifest/variant and one sample media segment; it is not continuous playback.",
             "Declared quality comes from source metadata/title and is not measured resolution.",
             "Resolution verified means ffprobe reported video dimensions; it does not certify sustained playback or visual quality.",
-            "Playback verified means ffmpeg decoded a capped five-second sample (up to 30 frames); it is not an uptime guarantee.",\n            "Primary/backup ranks order alternatives per channel; this M3U ordering is not seamless player-side failover.",\n            "Stable HLS requires at least three recorded observations, an 80% or better segment-validation rate, and a successful current check.",
+            "Playback verified means ffmpeg decoded a capped five-second sample (up to 30 frames); it is not an uptime guarantee.",
+            "Primary/backup ranks order alternatives per channel; M3U ordering is not seamless player-side failover.",
+            "Stable HLS requires at least three recorded observations, an 80% or better segment-validation rate, and a successful current check.",\n            "Primary/backup ranks order alternatives per channel; this M3U ordering is not seamless player-side failover.",\n            "Stable HLS requires at least three recorded observations, an 80% or better segment-validation rate, and a successful current check.",
             "Playback verified means ffmpeg decoded a capped five-second sample (up to 30 frames); it is not an uptime guarantee.",
             "Only publicly listed HTTP(S) feeds are collected. DRM, paywall, login, geo-controls and access-control bypass are not attempted.",
             "Discovery uses iptv-org plus optional owner-reviewed public entries in sources/registry.json; source provenance is recorded.",

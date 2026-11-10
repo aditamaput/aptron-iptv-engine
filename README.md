@@ -10,7 +10,8 @@ Automated discovery, layered stream validation, health history and M3U generatio
 - Separates HTTP reachability from HLS manifest/variant and sample-segment validation.
 - Stores per-stream HLS results, segment details, probe timestamps and attempt counts in `reports/health.json`.
 - Retains a bounded 14-snapshot history in `reports/history.json` and reports recovered/newly failing endpoints.
-- Optionally uses ffprobe to measure reported video dimensions for a capped number of declared-HD candidates. Metadata claims are never treated as measured resolution.
+- Optionally uses ffprobe to inspect actual video dimensions for a capped number of declared-HD candidates. Metadata claims are never treated as measured resolution.
+- Optionally uses ffmpeg to decode up to 30 frames from a five-second sample for a capped number of candidates.
 - Generates separate all-candidate, declared-HD, HTTP-reachable, HLS-validated, resolution-verified-HD and stable-HLS playlists.
 
 ## Playlist outputs
@@ -21,6 +22,7 @@ Automated discovery, layered stream validation, health history and M3U generatio
 - [HTTP reachable + declared HD (metadata only)](https://raw.githubusercontent.com/aditamaput/aptron-iptv-engine/main/playlists/indonesia-online-hd.m3u)
 - [HLS manifest and sample segment validated](https://raw.githubusercontent.com/aditamaput/aptron-iptv-engine/main/playlists/indonesia-hls-validated.m3u)
 - [Resolution verified HD](https://raw.githubusercontent.com/aditamaput/aptron-iptv-engine/main/playlists/indonesia-hd-verified.m3u)
+- [Playback sample verified](https://raw.githubusercontent.com/aditamaput/aptron-iptv-engine/main/playlists/indonesia-playback-verified.m3u)
 - [Stable HLS candidates](https://raw.githubusercontent.com/aditamaput/aptron-iptv-engine/main/playlists/indonesia-stable.m3u)
 - [Health report](https://raw.githubusercontent.com/aditamaput/aptron-iptv-engine/main/reports/health.json)
 
@@ -40,6 +42,8 @@ Environment variables:
 | `RETRY_BACKOFF` | `1` | Exponential retry base delay |
 | `ENABLE_MEDIA_PROBE` | `true` | Enable optional ffprobe dimension checks |
 | `MEDIA_PROBE_LIMIT` | `30` | Maximum declared-HD candidates for ffprobe |
+| `ENABLE_PLAYBACK_PROBE` | `true` | Enable optional five-second ffmpeg decode sampling |
+| `PLAYBACK_PROBE_LIMIT` | `12` | Maximum candidates for playback sampling (capped at 20) |
 
 ## Run locally
 
@@ -74,7 +78,7 @@ ENABLE_MEDIA_PROBE=false python generator.py
 
 ## Source and access policy
 
-Discovery currently uses the public [iptv-org API](https://github.com/iptv-org/api). Additional source registries require source provenance and authorization review before integration. Only publicly listed HTTP(S) feeds are probed. The engine does not bypass DRM, paywalls, logins, geo-controls, signed access controls or other restrictions. Public reachability does not automatically grant redistribution rights; only use feeds you are authorized to access.
+Discovery uses the public [iptv-org API](https://github.com/iptv-org/api) and the optional owner-reviewed `sources/registry.json`. See [sources/README.md](sources/README.md) for the provenance and authorization schema. Registry entries are not treated as authorized merely because they are reachable. Only publicly listed HTTP(S) feeds are probed. The engine does not bypass DRM, paywalls, logins, geo-controls, signed access controls or other restrictions. Public reachability does not automatically grant redistribution rights; only use feeds you are authorized to access.
 
 ## Automation
 

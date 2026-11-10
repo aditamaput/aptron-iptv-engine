@@ -57,7 +57,7 @@ def analyze_history(current_streams: list, previous_report: dict, history_path: 
                 transitions["recovered_http"].append({"channel": label, "url": url})
             if prior.get("status") == "online" and state["status"] != "online":
                 transitions["new_http_failures"].append({"channel": label, "url": url, "status": state["status"]})
-            if prior.get("hls_status") == "segment_ok" and state["hls_status"] not in ("segment_ok", "not_hls"):
+            if prior.get("hls_status") == "segment_ok" and state["hls_status"] != "segment_ok":
                 transitions["hls_regressions"].append({"channel": label, "url": url, "hls_status": state["hls_status"]})
             if prior.get("hls_status") != "segment_ok" and state["hls_status"] == "segment_ok":
                 transitions["hls_recoveries"].append({"channel": label, "url": url})

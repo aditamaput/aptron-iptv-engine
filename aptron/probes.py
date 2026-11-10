@@ -185,8 +185,8 @@ def probe_video(url: str, timeout: int = 12, headers: dict | None = None) -> dic
     if headers:
         if headers.get("User-Agent"):
             command.extend(["-user_agent", headers["User-Agent"]])
-        custom = "".join(f"{key}: {value}\r\n" for key, value in headers.items()
-                         if key.lower() not in ("user-agent", "range"))
+        referer = str(headers.get("Referer", "")).replace("\r", "").replace("\n", "")
+        custom = f"Referer: {referer}\r\n" if referer else ""
         if custom:
             command.extend(["-headers", custom])
     command.append(url)

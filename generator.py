@@ -24,6 +24,8 @@ RETRIES = max(0, min(3, int(os.getenv("CHECK_RETRIES", "1"))))
 RETRY_BACKOFF = max(0.0, float(os.getenv("RETRY_BACKOFF", "1")))
 ENABLE_MEDIA_PROBE = os.getenv("ENABLE_MEDIA_PROBE", "true").lower() == "true"
 MEDIA_PROBE_LIMIT = max(0, min(60, int(os.getenv("MEDIA_PROBE_LIMIT", "30"))))
+ENABLE_PLAYBACK_PROBE = os.getenv("ENABLE_PLAYBACK_PROBE", "true").lower() == "true"
+PLAYBACK_PROBE_LIMIT = max(0, min(20, int(os.getenv("PLAYBACK_PROBE_LIMIT", "12"))))
 ROOT = Path(__file__).resolve().parent
 PLAYLIST_DIR = ROOT / "playlists"
 REPORT_DIR = ROOT / "reports"
@@ -139,11 +141,13 @@ def main():
     print(f"{len(channels)} Indonesian channel records; {len(candidates)} unique public HTTP(S) stream URLs.")
 
     media_probe_urls = set()
-    if ENABLE_MEDIA_PROBE and MEDIA_PROBE_LIMIT:
-        for _, stream in candidates:
-            q = declared_quality(stream.get("quality") or stream.get("title"))
-            if q >= 720 and len(media_probe_urls) < MEDIA_PROBE_LIMIT:
-                media_probe_urls.add(stream["url"])
+    playback_probe_urls = set()
+    for _, stream in candidates:
+        q = declared_quality(stream.get("quality") or stream.get("title"))
+        if q >= 720 and ENABLE_MEDIA_PROBE and len(media_probe_urls) < MEDIA_PROBE_LIMIT:
+            media_probe_urls.add(stream["url"])
+        if q >= 720 and ENABLE_PLAYBACK_PROBE and len(playback_probe_urls) < PLAYBACK_PROBE_LIMIT:
+            playback_probe_urls.add(stream["url"])
 
     health = {}
     if CHECK_STREAMS and candidates:
@@ -152,6 +156,7 @@ def main():
                 pool.submit(
                     check_stream, stream, TIMEOUT, RETRIES, RETRY_BACKOFF,
                     ENABLE_MEDIA_PROBE and stream.get("url") in media_probe_urls,
+                    ENABLE_PLAYBACK_PROBE and stream.get("url") in playback_probe_urls,
                 ): stream
                 for _, stream in candidates
             }
@@ -214,6 +219,7 @@ def main():
             "hls_segment_http_status": item.get("hls_segment_http_status"),
             "hls_segment_bytes": item.get("hls_segment_bytes", 0),
             "video_probe": video,
+            "playback_probe": item.get("playback_probe") or {"status": "not_checked"},
         })
 
     transitions = analyze_history(stream_records, previous_report, HISTORY_PATH, generated_at)
@@ -241,6 +247,10 @@ def main():
         if row["record"].get("video_probe", {}).get("status") == "verified"
         and row["record"]["video_probe"].get("height", 0) >= 720
     ]
+    playback_verified = [
+        row for row in hls_validated
+        if row["record"].get("playback_probe", {}).get("status") == "verified"
+    ]
     stable = [
         row for row in hls_validated
         if row["record"].get("consecutive_failed_checks", 0) == 0
@@ -253,11 +263,13 @@ def main():
     write_playlist("indonesia-online-hd.m3u", online_declared_hd)
     write_playlist("indonesia-hls-validated.m3u", hls_validated)
     write_playlist("indonesia-hd-verified.m3u", hd_verified)
+    write_playlist("indonesia-playback-verified.m3u", playback_verified)
     write_playlist("indonesia-stable.m3u", stable)
 
     counts = Counter(record["status"] for record in stream_records)
     hls_counts = Counter(record["hls_status"] for record in stream_records)
     video_counts = Counter(record.get("video_probe", {}).get("status", "not_checked") for record in stream_records)
+    playback_counts = Counter(record.get("playback_probe", {}).get("status", "not_checked") for record in stream_records)
     report = {
         "schema_version": 2,
         "generated_at": generated_at,
@@ -272,6 +284,8 @@ def main():
         "hls_segment_verified_streams": hls_counts.get("segment_ok", 0),
         "video_probe_counts": dict(video_counts),
         "resolution_verified_hd_streams": len(hd_verified),
+        "playback_verified_streams": len(playback_verified),
+        "playback_probe_counts": dict(playback_counts),
         "stable_hls_streams": len(stable),
         "transitions": transitions,
         "playlists": {
@@ -281,6 +295,7 @@ def main():
             "http_reachable_declared_hd": "playlists/indonesia-online-hd.m3u",
             "hls_segment_validated": "playlists/indonesia-hls-validated.m3u",
             "resolution_verified_hd": "playlists/indonesia-hd-verified.m3u",
+            "playback_verified": "playlists/indonesia-playback-verified.m3u",
             "stable_hls": "playlists/indonesia-stable.m3u",
         },
         "notes": [
@@ -288,6 +303,7 @@ def main():
             "HLS validation checks a manifest/variant and one sample media segment; it is not continuous playback.",
             "Declared quality comes from source metadata/title and is not measured resolution.",
             "Resolution verified means ffprobe reported video dimensions; it does not certify sustained playback or visual quality.",
+            "Playback verified means ffmpeg decoded a capped five-second sample (up to 30 frames); it is not an uptime guarantee.",
             "Only publicly listed HTTP(S) feeds are collected. DRM, paywall, login, geo-controls and access-control bypass are not attempted.",
             "Discovery currently uses the iptv-org public API; new providers require provenance and authorization review.",
         ],

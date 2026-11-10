@@ -154,17 +154,23 @@ def validate_hls(url: str, headers: dict, timeout: int = 10) -> dict:
         return {**result, "status": "failed", "error_kind": kind, "detail": message}
 
 
-def probe_video(url: str, timeout: int = 12) -> dict:
+def probe_video(url: str, timeout: int = 12, headers: dict | None = None) -> dict:
     """Inspect bitstream dimensions with ffprobe; source title metadata is not used."""
     import shutil
     executable = shutil.which("ffprobe")
     if not executable:
         return {"status": "unavailable", "detail": "ffprobe is not installed"}
-    command = [
-        executable, "-v", "error", "-read_intervals", "%+5",
-        "-select_streams", "v:0", "-show_entries",
-        "stream=codec_name,width,height,bit_rate", "-of", "json", url,
-    ]
+    command = [executable, "-v", "error", "-read_intervals", "%+5",
+               "-select_streams", "v:0", "-show_entries",
+               "stream=codec_name,width,height,bit_rate", "-of", "json"]
+    if headers:
+        if headers.get("User-Agent"):
+            command.extend(["-user_agent", headers["User-Agent"]])
+        custom = "".join(f"{key}: {value}\\r\\n" for key, value in headers.items()
+                         if key.lower() not in ("user-agent", "range"))
+        if custom:
+            command.extend(["-headers", custom])
+    command.append(url)
     try:
         completed = subprocess.run(command, capture_output=True, text=True, timeout=timeout, check=False)
         if completed.returncode != 0:
@@ -189,15 +195,20 @@ def probe_video(url: str, timeout: int = 12) -> dict:
         return {"status": "failed", "detail": str(exc)[:240]}
 
 
-def probe_playback(url: str, timeout: int = 15) -> dict:
+def probe_playback(url: str, timeout: int = 15, headers: dict | None = None) -> dict:
     """Decode a short sample with ffmpeg; this is a smoke test, not an uptime guarantee."""
     executable = shutil.which("ffmpeg")
     if not executable:
         return {"status": "unavailable", "detail": "ffmpeg is not installed"}
-    command = [
-        executable, "-nostdin", "-v", "error", "-i", url,
-        "-t", "5", "-map", "0:v:0", "-frames:v", "30", "-f", "null", "-",
-    ]
+    command = [executable, "-nostdin", "-v", "error"]
+    if headers:
+        if headers.get("User-Agent"):
+            command.extend(["-user_agent", headers["User-Agent"]])
+        custom = "".join(f"{key}: {value}\\r\\n" for key, value in headers.items()
+                         if key.lower() not in ("user-agent", "range"))
+        if custom:
+            command.extend(["-headers", custom])
+    command.extend(["-i", url, "-t", "5", "-map", "0:v:0", "-frames:v", "30", "-f", "null", "-"])
     try:
         completed = subprocess.run(command, capture_output=True, text=True, timeout=timeout, check=False)
         if completed.returncode == 0:
@@ -257,9 +268,11 @@ def check_stream(stream: dict, timeout: int = 10, retries: int = 1, retry_backof
                 result["hls_status"] = hls["status"]
                 result["hls_detail"] = hls["detail"]
                 if enable_media_probe and hls["status"] == "segment_ok":
-                    result["video_probe"] = probe_video(final_url, timeout=max(timeout, 12))
+                    probe_headers = {k: v for k, v in headers.items() if k.lower() != "range"}
+                    result["video_probe"] = probe_video(final_url, timeout=max(timeout, 12), headers=probe_headers)
                 if enable_playback_probe and hls["status"] == "segment_ok":
-                    result["playback_probe"] = probe_playback(final_url, timeout=max(timeout, 15))
+                    probe_headers = {k: v for k, v in headers.items() if k.lower() != "range"}
+                    result["playback_probe"] = probe_playback(final_url, timeout=max(timeout, 15), headers=probe_headers)
             else:
                 result["hls_status"] = "not_hls"
                 result["hls_detail"] = "No HLS manifest detected"

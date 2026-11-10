@@ -258,7 +258,7 @@ def main():
         row["record"]["stream_role"] = "primary" if rank == 1 else f"backup_{rank - 1}"
     all_rows = rows
     declared_hd = [row for row in rows if row["declared_quality"] >= 720]
-    online = [row for row in rows if row["record"]["http_reachable"]]
+    online = [row for row in rows if row["record"]["status"] == "online"]
     online_declared_hd = [row for row in online if row["declared_quality"] >= 720]
     hls_validated = [row for row in online if row["record"]["hls_status"] == "segment_ok"]
     hd_verified = [
@@ -300,7 +300,8 @@ def main():
         "channels_with_streams": len({row["channel"]["id"] for row in rows}),
         "candidate_streams": len(rows),
         "declared_hd_streams_720p_plus": len(declared_hd),
-        "http_reachable_streams": counts.get("online", 0),
+        "http_reachable_streams": sum(1 for record in stream_records if record["http_reachable"]),
+        "unplayable_http_responses": counts.get("unplayable", 0),
         "health_counts": dict(counts),
         "hls_validation_counts": dict(hls_counts),
         "hls_segment_verified_streams": hls_counts.get("segment_ok", 0),
@@ -335,7 +336,7 @@ def main():
     }
     HEALTH_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(
-        f"Generated {len(rows)} candidates; HTTP reachable={counts.get('online', 0)}; "
+        f"Generated {len(rows)} candidates; HTTP reachable={sum(1 for record in stream_records if record['http_reachable'])}; "
         f"HLS segment_ok={hls_counts.get('segment_ok', 0)}; verified HD={len(hd_verified)}."
     )
 

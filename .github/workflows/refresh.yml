@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: refresh-iptv
+  group: refresh-iptv-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref }}
           fetch-depth: 0
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -76,7 +76,7 @@ jobs:
           fi
           git commit -m "chore: refresh Indonesia IPTV playlists"
           for attempt in 1 2 3; do
-            if git push origin HEAD:main; then
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
               echo "Refresh commit pushed."
               exit 0
             fi
@@ -84,13 +84,13 @@ jobs:
               break
             fi
             echo "Push attempt $attempt rejected; synchronizing with main."
-            git fetch origin main
-            if git rebase origin/main; then
+            git fetch origin "$GITHUB_REF_NAME"
+            if git rebase "origin/${GITHUB_REF_NAME}"; then
               continue
             fi
             echo "Generated outputs conflicted with main; regenerating from latest main."
             git rebase --abort || true
-            git reset --hard origin/main
+            git reset --hard "origin/${GITHUB_REF_NAME}"
             python generator.py
             git add playlists/ reports/
             if git diff --cached --quiet; then

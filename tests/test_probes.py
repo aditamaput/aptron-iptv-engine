@@ -2,7 +2,7 @@ import unittest
 from unittest.mock import patch
 from urllib.error import HTTPError
 
-from aptron.probes import _classify_http, _network_error, _parse_hls_attributes, _retry_delay, validate_hls
+from aptron.probes import _classify_http, _network_error, _parse_hls_attributes, _retry_delay, check_stream, validate_hls
 
 
 class ProbeHelpersTests(unittest.TestCase):
@@ -23,6 +23,13 @@ class ProbeHelpersTests(unittest.TestCase):
         self.assertEqual(_network_error(OSError("Name or service not known"))[0], "dns_error")
         self.assertEqual(_network_error(TimeoutError("timed out"))[0], "timeout")
         self.assertEqual(_network_error(ConnectionRefusedError("connection refused"))[0], "connection_refused")
+
+    @patch("aptron.probes._request_sample")
+    def test_http_reachable_html_is_not_a_playable_stream(self, request):
+        request.return_value = (200, "text/html", b"<html>login</html>", "https://example.test/live")
+        result = check_stream({"url": "https://example.test/live"}, retries=0)
+        self.assertTrue(result["http_reachable"])
+        self.assertEqual(result["status"], "unplayable")
 
     def test_hls_attribute_parser(self):
         attrs = _parse_hls_attributes('BANDWIDTH=2500000,RESOLUTION=1920x1080,CODECS="avc1.4d401f,mp4a.40.2"')

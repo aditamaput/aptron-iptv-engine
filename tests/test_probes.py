@@ -1,5 +1,6 @@
 import unittest
-from unittest.mock import patch\nfrom urllib.error import HTTPError
+from unittest.mock import patch
+from urllib.error import HTTPError
 
 from aptron.probes import _classify_http, _network_error, _parse_hls_attributes, _retry_delay, validate_hls
 

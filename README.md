@@ -87,6 +87,7 @@ Discovery uses the public [iptv-org API](https://github.com/iptv-org/api) and th
 - Daily refresh: 01:17 UTC (09:17 WIB / 10:17 WITA).
 - CI: Python compilation and unit tests on branch pushes and pull requests.
 - Refresh workflow runs are separate from unit-test CI.
+- For isolated live staging, open Actions → Refresh Indonesia IPTV → Run workflow and select `feature/aptron-iptv-engine-2`. The workflow checks out and pushes only to the selected branch. Scheduled runs continue to target `main`.
 
 ## Global football channel research
 

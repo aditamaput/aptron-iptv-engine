@@ -13,7 +13,13 @@ class ProbeHelpersTests(unittest.TestCase):
         self.assertEqual(_classify_http(429), "rate_limited")
         self.assertEqual(_classify_http(503), "server_error")
 
-    def test_retry_after_is_respected_and_bounded(self):\n        exc = HTTPError("https://example.test", 429, "rate limited", {"Retry-After": "45"}, None)\n        self.assertEqual(_retry_delay(exc, 1), 30.0)\n        exc = HTTPError("https://example.test", 429, "rate limited", {"Retry-After": "3"}, None)\n        self.assertEqual(_retry_delay(exc, 1), 3.0)\n\n    def test_network_error_classification(self):
+    def test_retry_after_is_respected_and_bounded(self):
+        exc = HTTPError("https://example.test", 429, "rate limited", {"Retry-After": "45"}, None)
+        self.assertEqual(_retry_delay(exc, 1), 30.0)
+        exc = HTTPError("https://example.test", 429, "rate limited", {"Retry-After": "3"}, None)
+        self.assertEqual(_retry_delay(exc, 1), 3.0)
+
+    def test_network_error_classification(self):
         self.assertEqual(_network_error(OSError("Name or service not known"))[0], "dns_error")
         self.assertEqual(_network_error(TimeoutError("timed out"))[0], "timeout")
         self.assertEqual(_network_error(ConnectionRefusedError("connection refused"))[0], "connection_refused")

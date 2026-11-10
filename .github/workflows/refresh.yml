@@ -54,6 +54,17 @@ jobs:
           PLAYBACK_PROBE_LIMIT: "12"
       - name: Commit refreshed output with conflict recovery
         shell: bash
+        env:
+          COUNTRY_CODE: ID
+          CHECK_STREAMS: "true"
+          CHECK_TIMEOUT: "10"
+          CHECK_WORKERS: "16"
+          CHECK_RETRIES: "1"
+          RETRY_BACKOFF: "1"
+          ENABLE_MEDIA_PROBE: "true"
+          MEDIA_PROBE_LIMIT: "30"
+          ENABLE_PLAYBACK_PROBE: "true"
+          PLAYBACK_PROBE_LIMIT: "12"
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
@@ -69,7 +80,10 @@ jobs:
               echo "Refresh commit pushed."
               exit 0
             fi
-            echo "Push attempt ${attempt} rejected; synchronizing with main."
+            if [ "$attempt" -eq 3 ]; then
+              break
+            fi
+            echo "Push attempt $attempt rejected; synchronizing with main."
             git fetch origin main
             if git rebase origin/main; then
               continue

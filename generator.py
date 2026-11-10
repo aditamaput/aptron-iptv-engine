@@ -278,7 +278,6 @@ def main():
     ]
 
     write_playlist("indonesia-all.m3u", all_rows)
-    write_playlist("indonesia-ranked.m3u", all_rows)
     write_playlist("indonesia-hd.m3u", declared_hd)
     write_playlist("indonesia-online.m3u", online)
     write_playlist("indonesia-online-hd.m3u", online_declared_hd)
@@ -313,7 +312,6 @@ def main():
         "transitions": transitions,
         "playlists": {
             "all": "playlists/indonesia-all.m3u",
-            "ranked_primary_backup": "playlists/indonesia-ranked.m3u",
             "declared_hd": "playlists/indonesia-hd.m3u",
             "http_reachable": "playlists/indonesia-online.m3u",
             "http_reachable_declared_hd": "playlists/indonesia-online-hd.m3u",

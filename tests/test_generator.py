@@ -54,6 +54,10 @@ class GeneratorIntegrationTests(unittest.TestCase):
             self.assertEqual(report["http_reachable_streams"], 2)
             self.assertEqual(report["hls_segment_verified_streams"], 1)
             self.assertEqual(report["resolution_verified_hd_streams"], 1)
+            self.assertEqual(report["stable_hls_streams"], 0)
+            records = {item["url"]: item for item in report["streams"]}
+            self.assertEqual(records["https://demo.example/live.m3u8"]["stream_role"], "primary")
+            self.assertEqual(records["https://demo.example/backup.m3u8"]["stream_role"], "backup_1")
             self.assertEqual(len(report["transitions"]["recovered_http"]), 0)
             hls_playlist = (root / "playlists" / "indonesia-hls-validated.m3u").read_text(encoding="utf-8")
             online_playlist = (root / "playlists" / "indonesia-online.m3u").read_text(encoding="utf-8")

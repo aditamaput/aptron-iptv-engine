@@ -14,6 +14,7 @@ from urllib.parse import urlparse
 
 from aptron.history import analyze_history, read_json
 from aptron.probes import check_stream
+from aptron.sources import load_approved_sources
 
 API = "https://iptv-org.github.io/api"
 COUNTRY = os.getenv("COUNTRY_CODE", "ID").upper()
@@ -133,6 +134,12 @@ def main():
         seen.add(url)
         candidates.append((channels[channel_id], stream))
 
+    registry_candidates, source_warnings = load_approved_sources(ROOT / "sources" / "registry.json", COUNTRY)
+    for channel, stream in registry_candidates:
+        if stream["url"] not in seen:
+            seen.add(stream["url"])
+            candidates.append((channel, stream))
+
     candidates.sort(key=lambda pair: (
         clean(pair[0].get("name")).casefold(),
         -declared_quality(pair[1].get("quality") or pair[1].get("title")),
@@ -200,7 +207,8 @@ def main():
             "quality": row["stream"].get("quality"),
             "declared_quality": row["declared_quality"],
             "url": row["stream"].get("url"),
-            "source": "iptv-org/api",
+            "source": row["stream"].get("_source_name", "iptv-org/api"),
+            "source_url": row["stream"].get("_source_url", "https://github.com/iptv-org/api"),
             "labels": row["stream"].get("labels") or [],
             "status": item.get("status", "not_checked"),
             "http_reachable": bool(item.get("http_reachable", False)),
@@ -275,6 +283,8 @@ def main():
         "generated_at": generated_at,
         "country": COUNTRY,
         "source": "https://github.com/iptv-org/api",
+        "discovery_sources": dict(Counter(record["source"] for record in stream_records)),
+        "source_registry_rejections": source_warnings,
         "channels_with_streams": len({row["channel"]["id"] for row in rows}),
         "candidate_streams": len(rows),
         "declared_hd_streams_720p_plus": len(declared_hd),
@@ -304,8 +314,9 @@ def main():
             "Declared quality comes from source metadata/title and is not measured resolution.",
             "Resolution verified means ffprobe reported video dimensions; it does not certify sustained playback or visual quality.",
             "Playback verified means ffmpeg decoded a capped five-second sample (up to 30 frames); it is not an uptime guarantee.",
+            "Playback verified means ffmpeg decoded a capped five-second sample (up to 30 frames); it is not an uptime guarantee.",
             "Only publicly listed HTTP(S) feeds are collected. DRM, paywall, login, geo-controls and access-control bypass are not attempted.",
-            "Discovery currently uses the iptv-org public API; new providers require provenance and authorization review.",
+            "Discovery uses iptv-org plus optional owner-reviewed public entries in sources/registry.json; source provenance is recorded.",
         ],
         "streams": stream_records,
     }

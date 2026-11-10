@@ -166,7 +166,7 @@ def probe_video(url: str, timeout: int = 12, headers: dict | None = None) -> dic
     if headers:
         if headers.get("User-Agent"):
             command.extend(["-user_agent", headers["User-Agent"]])
-        custom = "".join(f"{key}: {value}\\r\\n" for key, value in headers.items()
+        custom = "".join(f"{key}: {value}\r\n" for key, value in headers.items()
                          if key.lower() not in ("user-agent", "range"))
         if custom:
             command.extend(["-headers", custom])
@@ -204,7 +204,7 @@ def probe_playback(url: str, timeout: int = 15, headers: dict | None = None) -> 
     if headers:
         if headers.get("User-Agent"):
             command.extend(["-user_agent", headers["User-Agent"]])
-        custom = "".join(f"{key}: {value}\\r\\n" for key, value in headers.items()
+        custom = "".join(f"{key}: {value}\r\n" for key, value in headers.items()
                          if key.lower() not in ("user-agent", "range"))
         if custom:
             command.extend(["-headers", custom])

@@ -12,7 +12,8 @@ Automated discovery, layered stream validation, health history and M3U generatio
 - Retains a bounded 14-snapshot history in `reports/history.json` and reports recovered/newly failing endpoints.
 - Optionally uses ffprobe to inspect actual video dimensions for a capped number of declared-HD candidates. Metadata claims are never treated as measured resolution.
 - Optionally uses ffmpeg to decode up to 30 frames from a five-second sample for a capped number of candidates.
-- Generates separate all-candidate, declared-HD, HTTP-reachable, HLS-validated, resolution-verified-HD and stable-HLS playlists.
+- Generates separate all-candidate, declared-HD, HTTP-reachable, HLS-validated, resolution-verified-HD, playback-sampled and stable-HLS playlists.
+- Ranks multiple endpoints for each channel as primary and backups in the health report; this is playlist ordering, not automatic mid-stream failover.
 
 ## Playlist outputs
 
@@ -26,7 +27,7 @@ Automated discovery, layered stream validation, health history and M3U generatio
 - [Stable HLS candidates](https://raw.githubusercontent.com/aditamaput/aptron-iptv-engine/main/playlists/indonesia-stable.m3u)
 - [Health report](https://raw.githubusercontent.com/aditamaput/aptron-iptv-engine/main/reports/health.json)
 
-The stable playlist ranks candidates using recent observations. It does not provide seamless mid-playback failover; that requires player or relay support.
+The stable playlist requires at least three observations, a current passing HLS sample and an 80% or better recent HLS success rate. Primary/backup ranks are included per channel in `health.json`; playlist ordering does not provide seamless mid-playback failover, which requires player or relay support.
 
 ## Configuration
 
@@ -71,6 +72,7 @@ ENABLE_MEDIA_PROBE=false python generator.py
 - `online` means the HTTP request returned 2xx; it is not proof of playable video.
 - `segment_ok` means an HLS manifest (and selected variant when present) plus one sample segment were reachable. It is not continuous playback validation.
 - `resolution_verified_hd` requires ffprobe to report a video height of at least 720 pixels. It is not a bitrate or quality guarantee.
+- `playback_verified` means ffmpeg decoded up to 30 frames from a five-second sample. It is not a continuous-playback or uptime guarantee.
 - Declared HD is retained as metadata only.
 - HTTP 401/403 is classified as restricted, 404/410 as offline, 429 as rate-limited, and 5xx as server error. Transient network errors are retried a bounded number of times.
 - Health history is limited to the latest 14 snapshots; reliability scores are based on observed HLS segment validation.

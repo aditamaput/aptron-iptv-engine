@@ -14,20 +14,31 @@ permissions:
   contents: write
 
 concurrency:
-  group: refresh-iptv
+  group: refresh-iptv-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 35
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Ensure media probe tools are available
+        run: |
+          if ! command -v ffmpeg >/dev/null 2>&1 || ! command -v ffprobe >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+          ffmpeg -version | head -n 1
+          ffprobe -version | head -n 1
       - name: Generate playlists and health report
         run: python generator.py
         env:
@@ -35,14 +46,58 @@ jobs:
           CHECK_STREAMS: "true"
           CHECK_TIMEOUT: "10"
           CHECK_WORKERS: "16"
-      - name: Commit refreshed output
+          CHECK_RETRIES: "1"
+          RETRY_BACKOFF: "1"
+          ENABLE_MEDIA_PROBE: "true"
+          MEDIA_PROBE_LIMIT: "30"
+          ENABLE_PLAYBACK_PROBE: "true"
+          PLAYBACK_PROBE_LIMIT: "12"
+      - name: Commit refreshed output with conflict recovery
+        shell: bash
+        env:
+          COUNTRY_CODE: ID
+          CHECK_STREAMS: "true"
+          CHECK_TIMEOUT: "10"
+          CHECK_WORKERS: "16"
+          CHECK_RETRIES: "1"
+          RETRY_BACKOFF: "1"
+          ENABLE_MEDIA_PROBE: "true"
+          MEDIA_PROBE_LIMIT: "30"
+          ENABLE_PLAYBACK_PROBE: "true"
+          PLAYBACK_PROBE_LIMIT: "12"
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add playlists/ reports/
           if git diff --cached --quiet; then
             echo "No playlist or report changes."
-          else
-            git commit -m "chore: refresh Indonesia IPTV playlists"
-            git push
+            exit 0
           fi
+          git commit -m "chore: refresh Indonesia IPTV playlists"
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "Refresh commit pushed."
+              exit 0
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              break
+            fi
+            echo "Push attempt $attempt rejected; synchronizing with main."
+            git fetch origin "$GITHUB_REF_NAME"
+            if git rebase "origin/${GITHUB_REF_NAME}"; then
+              continue
+            fi
+            echo "Generated outputs conflicted with main; regenerating from latest main."
+            git rebase --abort || true
+            git reset --hard "origin/${GITHUB_REF_NAME}"
+            python generator.py
+            git add playlists/ reports/
+            if git diff --cached --quiet; then
+              echo "Latest main already contains equivalent outputs."
+              exit 0
+            fi
+            git commit -m "chore: refresh Indonesia IPTV playlists"
+          done
+          echo "Could not push refreshed outputs after 3 attempts." >&2
+          exit 1

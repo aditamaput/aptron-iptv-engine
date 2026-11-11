@@ -33,6 +33,8 @@ http://202.150.161.117:8000/play/NabawiTV
 https://akativi.siar.us/live/akativi.m3u8
 #EXTINF:-1 tvg-id="AsthaTV.id" tvg-name="Astha TV" group-title="Indonesia | Umum" tvg-logo="https://astha.garuda.tv/assets/logo-DLGyXEGO.png",Astha TV (1080p)
 https://hgmtv.com:2020/hls/asthalive/asthalive.m3u8
+#EXTINF:-1 tvg-id="AstroBlitarTV.id" tvg-name="Astro Blitar TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/rORKbGw.png",Astro Blitar TV (720p)
+https://5bf7b725107e5.streamlock.net/abtv/abtv/playlist.m3u8
 #EXTINF:-1 tvg-id="BalikpapanTV.id" tvg-name="Balikpapan TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/P3whqna.png",Balikpapan TV (720p)
 http://122.248.43.242:1935/BALIKPAPANTV/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="BanjarTV.id" tvg-name="Banjar TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/TA76a10.png",Banjar TV (720p)
@@ -93,8 +95,6 @@ https://live.salamtelevisi.com/hls/0/stream.m3u8
 https://sampit-tv.siar.us/live/sampit-tv.m3u8
 #EXTINF:-1 tvg-id="SangajiTV.id" tvg-name="Sangaji TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/4rTNT8F.png",Sangaji TV (720p)
 https://cdn.adyadigitalteknologi.com:8090/vod/relay.m3u8
-#EXTINF:-1 tvg-id="SelaparangTV.id" tvg-name="Selaparang TV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/id/c/ce/Logo_Selaparang_TV.png",Selaparang TV (720p)
-https://selaparangtv.siar.us/live/selaparangtv.m3u8
 #EXTINF:-1 tvg-id="SMTV.id" tvg-name="SMTV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/id/6/6e/Logo_SMTV_Sumedang.png",SMTV (720p)
 http://122.248.43.242:1935/SMTV/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="SMTV.id" tvg-name="SMTV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/id/6/6e/Logo_SMTV_Sumedang.png",SMTV (720p)

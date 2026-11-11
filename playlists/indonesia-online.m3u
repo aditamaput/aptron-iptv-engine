@@ -9,6 +9,8 @@ https://lingkartv.my.id/hls/lingkartv.m3u8
 https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="SuaraSurabayaVisualRadio.id" tvg-name="Suara Surabaya Visual Radio" group-title="Indonesia | Berita" tvg-logo="https://upload.wikimedia.org/wikipedia/id/f/f8/Suara_Surabaya.svg",Suara Surabaya Visual Radio (720p)
 https://ssfm.siar.us/ssfm/live/playlist.m3u8
+#EXTINF:-1 tvg-id="CNBCIndonesia.id" tvg-name="CNBC Indonesia" group-title="Indonesia | Bisnis" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/51/CNBC_Indonesia_2025.svg",CNBC Indonesia (CNBC Indonesia)
+https://video.detik.com/livecnbc/smil:cnbctv/chunklist_w1279679883_b384000_sleng.m3u8
 #EXTINF:-1 tvg-id="SaliraTV.id" tvg-name="Salira TV" group-title="Indonesia | Budaya" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_Salira_TV.png",Salira TV (720p)
 https://live.salira.tv/p/3870/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="SaliraTV.id" tvg-name="Salira TV" group-title="Indonesia | Budaya" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_Salira_TV.png",Salira TV (720p)
@@ -55,6 +57,8 @@ http://202.150.161.117:8000/play/NabawiTV
 https://akativi.siar.us/live/akativi.m3u8
 #EXTINF:-1 tvg-id="AsthaTV.id" tvg-name="Astha TV" group-title="Indonesia | Umum" tvg-logo="https://astha.garuda.tv/assets/logo-DLGyXEGO.png",Astha TV (1080p)
 https://hgmtv.com:2020/hls/asthalive/asthalive.m3u8
+#EXTINF:-1 tvg-id="AstroBlitarTV.id" tvg-name="Astro Blitar TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/rORKbGw.png",Astro Blitar TV (720p)
+https://5bf7b725107e5.streamlock.net/abtv/abtv/playlist.m3u8
 #EXTINF:-1 tvg-id="BalikpapanTV.id" tvg-name="Balikpapan TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/P3whqna.png",Balikpapan TV (720p)
 http://122.248.43.242:1935/BALIKPAPANTV/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="BandungTV.id" tvg-name="Bandung TV" group-title="Indonesia | Umum" tvg-logo="https://i.postimg.cc/JzqSzcj9/200px-Logo-bdg-tv-2016.png",Bandung TV (360p)
@@ -113,6 +117,8 @@ https://mgstv.siar.us/live/mgstv.m3u8
 https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="PadangTV.id" tvg-name="Padang TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/EL2BfxY.png",Padang TV (720p)
 http://122.248.43.242:1935/PADANGTV/_definst_/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="PKTV.id" tvg-name="PKTV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/mldv8Sf.png",PKTV (480p)
+https://streaming.id18.tunnel.my.id/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PONTV.id" tvg-name="PONTV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/P5erWzm.png",PONTV (720p)
 http://122.248.43.242:1935/PONTV/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="PujaTVAceh.id" tvg-name="Puja TV Aceh" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/0TqABCL.png",Puja TV Aceh (1080p)
@@ -133,8 +139,6 @@ https://live.salamtelevisi.com/hls/0/stream.m3u8
 https://sampit-tv.siar.us/live/sampit-tv.m3u8
 #EXTINF:-1 tvg-id="SangajiTV.id" tvg-name="Sangaji TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/4rTNT8F.png",Sangaji TV (720p)
 https://cdn.adyadigitalteknologi.com:8090/vod/relay.m3u8
-#EXTINF:-1 tvg-id="SelaparangTV.id" tvg-name="Selaparang TV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/id/c/ce/Logo_Selaparang_TV.png",Selaparang TV (720p)
-https://selaparangtv.siar.us/live/selaparangtv.m3u8
 #EXTINF:-1 tvg-id="SMTV.id" tvg-name="SMTV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/id/6/6e/Logo_SMTV_Sumedang.png",SMTV (720p)
 http://122.248.43.242:1935/SMTV/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="SMTV.id" tvg-name="SMTV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/id/6/6e/Logo_SMTV_Sumedang.png",SMTV (720p)
@@ -203,8 +207,6 @@ https://ott-balancer.tvri.go.id/live/eds/Sulteng/hls/Sulteng.m3u8
 https://ott-balancer.tvri.go.id/live/eds/Sumbar/hls/Sumbar.m3u8
 #EXTINF:-1 tvg-id="TVRI.id" tvg-name="TVRI" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/TVRILogo2019.svg/960px-TVRILogo2019.svg.png",TVRI (576i)
 https://ott-balancer.tvri.go.id/live/eds/DKI/hls/DKI.m3u8
-#EXTINF:-1 tvg-id="TVRI.id" tvg-name="TVRI" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/TVRILogo2019.svg/960px-TVRILogo2019.svg.png",TVRI (480p)
-https://ott-balancer.tvri.go.id/live/eds/Ambon/hls/Ambon.m3u8
 #EXTINF:-1 tvg-id="TVRI.id" tvg-name="TVRI" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/TVRILogo2019.svg/960px-TVRILogo2019.svg.png",TVRI (480p)
 https://ott-balancer.tvri.go.id/live/eds/Babel/hls/Babel.m3u8
 #EXTINF:-1 tvg-id="TVRI.id" tvg-name="TVRI" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/TVRILogo2019.svg/960px-TVRILogo2019.svg.png",TVRI (480p)

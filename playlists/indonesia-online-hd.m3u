@@ -95,6 +95,8 @@ https://live.salamtelevisi.com/hls/0/stream.m3u8
 https://sampit-tv.siar.us/live/sampit-tv.m3u8
 #EXTINF:-1 tvg-id="SangajiTV.id" tvg-name="Sangaji TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/4rTNT8F.png",Sangaji TV (720p)
 https://cdn.adyadigitalteknologi.com:8090/vod/relay.m3u8
+#EXTINF:-1 tvg-id="SelaparangTV.id" tvg-name="Selaparang TV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/id/c/ce/Logo_Selaparang_TV.png",Selaparang TV (720p)
+https://selaparangtv.siar.us/live/selaparangtv.m3u8
 #EXTINF:-1 tvg-id="SMTV.id" tvg-name="SMTV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/id/6/6e/Logo_SMTV_Sumedang.png",SMTV (720p)
 http://122.248.43.242:1935/SMTV/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="SMTV.id" tvg-name="SMTV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/id/6/6e/Logo_SMTV_Sumedang.png",SMTV (720p)

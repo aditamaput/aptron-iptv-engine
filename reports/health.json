@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T02:12:52.153683+00:00",
+  "generated_at": "2026-11-12T08:23:01.675652+00:00",
   "country": "ID",
   "source": "https://github.com/iptv-org/api",
   "channels_with_streams": 128,
@@ -7,17 +7,17 @@
   "declared_hd_streams_720p_plus": 126,
   "http_reachable_streams": 121,
   "health_counts": {
-    "unreachable": 46,
-    "offline": 33,
-    "online": 121
+    "unreachable": 47,
+    "online": 121,
+    "offline": 32
   },
   "hls_validation_counts": {
     "not_checked": 79,
-    "segment_ok": 109,
-    "failed": 10,
+    "segment_ok": 110,
+    "failed": 9,
     "not_hls": 2
   },
-  "hls_segment_verified_streams": 109,
+  "hls_segment_verified_streams": 110,
   "notes": [
     "HLS validation checks a manifest and one sample media segment; it is not a continuous playback or bitrate test.",
     "Quality is based on source metadata/title, not measured bitrate or decoded resolution.",
@@ -42,8 +42,8 @@
       "quality": null,
       "url": "http://origin5.mediacdn.ru/live/kidstv/index.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 503"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "My Kidz",
@@ -190,8 +190,8 @@
       "quality": null,
       "url": "https://video.detik.com/livecnn/smil:cnntv/chunklist_w268557525_b384000_sleng.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error _ssl.c:994: The handshake operation timed out>"
     },
     {
       "channel": "Huma Betang TV",
@@ -236,8 +236,8 @@
       "quality": null,
       "url": "https://lingkartv.my.id/hls/lingkartv.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Metro TV",
@@ -878,8 +878,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Caruban TV",
@@ -1102,8 +1102,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "JTV",
@@ -1132,8 +1132,8 @@
       "quality": null,
       "url": "https://5bf7b725107e5.streamlock.net/kstv/kstv/playlist.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "KTV",
@@ -1508,8 +1508,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Semarang TV",
@@ -1839,7 +1839,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Aceh/hls/Aceh.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1891,7 +1891,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Kalsel/hls/Kalsel.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1996,8 +1996,8 @@
       "quality": "480p",
       "url": "https://ott-balancer.tvri.go.id/live/eds/Ambon/hls/Ambon.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 502"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2037,7 +2037,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Gorontalo/hls/Gorontalo.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2067,7 +2067,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Kalteng/hls/Kalteng.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",

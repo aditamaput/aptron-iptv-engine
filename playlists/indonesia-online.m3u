@@ -1,22 +1,20 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="KidsTV.id" tvg-name="Kids TV" group-title="Indonesia | Anak" tvg-logo="https://i.imgur.com/B5YiUIP.png",Kids TV (Kids TV)
-http://origin5.mediacdn.ru/live/kidstv/index.m3u8
 #EXTINF:-1 tvg-id="BTV.id" tvg-name="BTV" group-title="Indonesia | Berita" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/BTV_%28Indonesia%29_logo_%282025%29.svg/960px-BTV_%28Indonesia%29_logo_%282025%29.svg.png",BTV (1080p)
 https://lnd0t3b922.tenbytecdn.com/ta-sg1/90369cf5-6ac2-411d-b3d0-15fae10a2e2c/master.m3u8
+#EXTINF:-1 tvg-id="CNNIndonesia.id" tvg-name="CNN Indonesia" group-title="Indonesia | Berita" tvg-logo="https://i.imgur.com/l0JyOrm.png",CNN Indonesia (CNN Indonesia)
+https://video.detik.com/livecnn/smil:cnntv/chunklist_w268557525_b384000_sleng.m3u8
+#EXTINF:-1 tvg-id="LingkarTV.id" tvg-name="Lingkar TV" group-title="Indonesia | Berita" tvg-logo="https://lingkartv.com/assets/img/logo-square.png",Lingkar TV (Lingkar TV)
+https://lingkartv.my.id/hls/lingkartv.m3u8
 #EXTINF:-1 tvg-id="MetroTV.id" tvg-name="Metro TV" group-title="Indonesia | Berita" tvg-logo="https://i.imgur.com/QnU70NI.png",Metro TV (Metro TV)
 https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="SuaraSurabayaVisualRadio.id" tvg-name="Suara Surabaya Visual Radio" group-title="Indonesia | Berita" tvg-logo="https://upload.wikimedia.org/wikipedia/id/f/f8/Suara_Surabaya.svg",Suara Surabaya Visual Radio (720p)
 https://ssfm.siar.us/ssfm/live/playlist.m3u8
-#EXTINF:-1 tvg-id="CNBCIndonesia.id" tvg-name="CNBC Indonesia" group-title="Indonesia | Bisnis" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/51/CNBC_Indonesia_2025.svg",CNBC Indonesia (CNBC Indonesia)
-https://video.detik.com/livecnbc/smil:cnbctv/chunklist_w1279679883_b384000_sleng.m3u8
 #EXTINF:-1 tvg-id="SaliraTV.id" tvg-name="Salira TV" group-title="Indonesia | Budaya" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_Salira_TV.png",Salira TV (720p)
 https://live.salira.tv/p/3870/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="SaliraTV.id" tvg-name="Salira TV" group-title="Indonesia | Budaya" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_Salira_TV.png",Salira TV (720p)
 https://live.salira.tv:3870/stream/play.m3u8
 #EXTINF:-1 tvg-id="TheIndonesiaChannel.id" tvg-name="The Indonesia Channel" group-title="Indonesia | Budaya" tvg-logo="https://i.imgur.com/jAAPgpV.png",The Indonesia Channel (1080p)
 https://restreamer.indonusa.id:8443/d5f4ad43-1b5a-4b0f-8bef-5b37224ed221.m3u8
-#EXTINF:-1 tvg-id="RinjaniTV.id" tvg-name="Rinjani TV" group-title="Indonesia | Edukasi" tvg-logo="https://lombokindustries.com/assunnah/zone/img/rinjanitv.png",Rinjani TV (Rinjani TV)
-https://rinjanitv.cloud/hls/tvkabel.m3u8
 #EXTINF:-1 tvg-id="FicomChannel.id" tvg-name="Ficom Channel" group-title="Indonesia | Hiburan" tvg-logo="https://i.imgur.com/KMEf0Cc.png",Ficom Channel (720p)
 https://v3.siar.us/ficomchannel/live/playlist.m3u8
 #EXTINF:-1 tvg-id="IndonesianaTV.id" tvg-name="Indonesiana.TV" group-title="Indonesia | Hiburan" tvg-logo="https://i.imgur.com/192wiS1.png",Indonesiana.TV (720p)
@@ -71,6 +69,8 @@ http://122.248.43.242:1935/BATAMTV/_definst_/myStream/playlist.m3u8
 https://5bf7b725107e5.streamlock.net/bmstv/bmstv/playlist.m3u8
 #EXTINF:-1 tvg-id="BRTV.id" tvg-name="BRTV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/id/1/1f/Logo_BRTV.png",BRTV (720p)
 https://5bf7b725107e5.streamlock.net/brtv/brtv/playlist.m3u8
+#EXTINF:-1 tvg-id="BungoTV.id" tvg-name="Bungo TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/OrCrtDA.png",Bungo TV (480p)
+https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8
 #EXTINF:-1 tvg-id="CarubanTV.id" tvg-name="Caruban TV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3a/CarubanTV%28Low-res%29.png",Caruban TV (1080p)
 https://stream.carubantv.id/hls/0/stream.m3u8
 #EXTINF:-1 tvg-id="DhohoTV.id" tvg-name="Dhoho TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/4Khyyfh.png",Dhoho TV (720p)
@@ -87,8 +87,6 @@ https://jambitv.globaldigitalcore.com/hls/sah5tu7Eiveepohyieyie3OoteL2anga.m3u8
 http://122.248.43.242:1935/JAWAPOSTVJKT/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="JekTV.id" tvg-name="Jek TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/wh75d1f.png",Jek TV (720p)
 http://27.124.81.245:1935/jektv/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="JogjaIstimewaTV.id" tvg-name="Jogja Istimewa TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/VEqQfTu.png",Jogja Istimewa TV (720p)
-http://103.255.15.222:1935/tv/jitv_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="JTV.id" tvg-name="JTV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/mIDWIQk.png",JTV (1080p)
 http://122.248.43.242:1935/JTVKEDIRI/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="JTV.id" tvg-name="JTV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/mIDWIQk.png",JTV (720p)
@@ -127,8 +125,6 @@ https://v2.siar.us/radartasikmalaya/live/playlist.m3u8
 https://v10.siar.us/rctv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="RiauTV.id" tvg-name="Riau TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/1g8FtJi.png",Riau TV (1080p)
 http://122.248.43.242:1935/RIAUTV/_definst_/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="RodjaTV.id" tvg-name="Rodja TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/XwCeHlC.png",Rodja TV (720p)
-https://rodjatv.com/rodjatv/live.m3u8
 #EXTINF:-1 tvg-id="SalamTV.id" tvg-name="Salam TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/00Ifzgo.png",Salam TV (720p)
 https://live.salamtelevisi.com/hls/0/stream.m3u8
 #EXTINF:-1 tvg-id="SampitTV.id" tvg-name="Sampit TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/8cFJa8G.png",Sampit TV (720p)
@@ -163,8 +159,6 @@ http://122.248.43.242:1935/SAMARINDATV/_definst_/myStream/playlist.m3u8
 https://surau-tv-rtmp-surautv.ltjafv.easypanel.host/hls/surautv.m3u8
 #EXTINF:-1 tvg-id="SurauTV.id" tvg-name="Surau TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/CKoxcWL.png",Surau TV (Surau TV)
 https://wahyu1ptv.pages.dev/SurauTV-HD.m3u8
-#EXTINF:-1 tvg-id="TATV.id" tvg-name="TATV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/1f0EC7t.png",TATV (720p)
-https://v2.siar.us/tatv/live.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="TV9Nusantara.id" tvg-name="TV 9 Nusantara" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/id/e/ed/TV9_Nusantara.png",TV 9 Nusantara (720p)
 https://5bf7b725107e5.streamlock.net/tv9/tv9/playlist.m3u8
 #EXTINF:-1 tvg-id="TVTabalong.id" tvg-name="TV Tabalong" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/2YhDH98.png",TV Tabalong (720p)

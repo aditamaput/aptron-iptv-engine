@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-13T08:00:52.047558+00:00",
+  "generated_at": "2026-11-14T07:37:58.508335+00:00",
   "country": "ID",
   "source": "https://github.com/iptv-org/api",
   "channels_with_streams": 128,
   "candidate_streams": 200,
   "declared_hd_streams_720p_plus": 126,
-  "http_reachable_streams": 118,
+  "http_reachable_streams": 120,
   "health_counts": {
-    "unreachable": 48,
-    "offline": 34,
-    "online": 118
+    "unreachable": 47,
+    "offline": 33,
+    "online": 120
   },
   "hls_validation_counts": {
-    "not_checked": 82,
-    "segment_ok": 107,
-    "failed": 9,
+    "not_checked": 80,
+    "segment_ok": 111,
+    "failed": 7,
     "not_hls": 2
   },
-  "hls_segment_verified_streams": 107,
+  "hls_segment_verified_streams": 111,
   "notes": [
     "HLS validation checks a manifest and one sample media segment; it is not a continuous playback or bitrate test.",
     "Quality is based on source metadata/title, not measured bitrate or decoded resolution.",
@@ -33,7 +33,7 @@
       "url": "http://livestream.biznetvideo.net/biznet_kids/smil:kids.smil/index.m3u8",
       "labels": [],
       "status": "unreachable",
-      "detail": "<urlopen error [Errno 111] Connection refused>"
+      "detail": "<urlopen error [Errno -2] Name or service not known>"
     },
     {
       "channel": "Kids TV",
@@ -266,8 +266,8 @@
       "quality": null,
       "url": "https://video.detik.com/livecnbc/smil:cnbctv/chunklist_w1279679883_b384000_sleng.m3u8",
       "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error _ssl.c:994: The handshake operation timed out>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Salira TV",
@@ -318,8 +318,8 @@
       "quality": null,
       "url": "https://rinjanitv.cloud/hls/tvkabel.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "My Cinema",
@@ -341,7 +341,7 @@
       "url": "http://livestream.biznetvideo.net/biznet_lifestyle/smil:lifestyle.smil/index.m3u8",
       "labels": [],
       "status": "unreachable",
-      "detail": "<urlopen error [Errno 111] Connection refused>"
+      "detail": "<urlopen error [Errno -2] Name or service not known>"
     },
     {
       "channel": "Dens Life & Style",
@@ -845,7 +845,7 @@
       "url": "http://livestream.biznetvideo.net/biznet_adventure/smil:adventure.smil/playlist.m3u8",
       "labels": [],
       "status": "unreachable",
-      "detail": "<urlopen error [Errno 111] Connection refused>"
+      "detail": "<urlopen error [Errno -2] Name or service not known>"
     },
     {
       "channel": "BMS TV",
@@ -962,8 +962,8 @@
       "quality": "1080p",
       "url": "https://hgmtv.com:19360/garudatvlivestreaming/garudatvlivestreaming.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "GTV",
@@ -1342,8 +1342,8 @@
       "quality": "480p",
       "url": "https://www.streaming.radartv.co.id/hls/test.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "Radar Tasikmalaya TV",
@@ -1420,8 +1420,8 @@
       "quality": "720p",
       "url": "https://rodjatv.com/rodjatv/live.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Rodja TV",
@@ -1702,8 +1702,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "unreachable",
-      "detail": "<urlopen error _ssl.c:994: The handshake operation timed out>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Tegar TV Lampung",
@@ -2107,7 +2107,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Sultra/hls/Sultra.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",

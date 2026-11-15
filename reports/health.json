@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-14T07:37:58.508335+00:00",
+  "generated_at": "2026-11-15T07:53:42.136337+00:00",
   "country": "ID",
   "source": "https://github.com/iptv-org/api",
   "channels_with_streams": 128,
   "candidate_streams": 200,
   "declared_hd_streams_720p_plus": 126,
-  "http_reachable_streams": 120,
+  "http_reachable_streams": 116,
   "health_counts": {
     "unreachable": 47,
-    "offline": 33,
-    "online": 120
+    "online": 116,
+    "offline": 37
   },
   "hls_validation_counts": {
-    "not_checked": 80,
-    "segment_ok": 111,
-    "failed": 7,
+    "not_checked": 84,
+    "segment_ok": 104,
+    "failed": 10,
     "not_hls": 2
   },
-  "hls_segment_verified_streams": 111,
+  "hls_segment_verified_streams": 104,
   "notes": [
     "HLS validation checks a manifest and one sample media segment; it is not a continuous playback or bitrate test.",
     "Quality is based on source metadata/title, not measured bitrate or decoded resolution.",
@@ -42,8 +42,8 @@
       "quality": null,
       "url": "http://origin5.mediacdn.ru/live/kidstv/index.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 503"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "My Kidz",
@@ -410,8 +410,8 @@
       "quality": "720p",
       "url": "https://v3.siar.us/ficomchannel/live/playlist.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Indonesiana.TV",
@@ -878,8 +878,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Caruban TV",
@@ -920,8 +920,8 @@
       "quality": "720p",
       "url": "https://dhohotv.siar.us/dhohotv/live/playlist.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "dTVi",
@@ -962,8 +962,8 @@
       "quality": "1080p",
       "url": "https://hgmtv.com:19360/garudatvlivestreaming/garudatvlivestreaming.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "GTV",
@@ -1102,8 +1102,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "JTV",
@@ -1132,8 +1132,8 @@
       "quality": null,
       "url": "https://5bf7b725107e5.streamlock.net/kstv/kstv/playlist.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "KTV",
@@ -1264,8 +1264,8 @@
       "quality": "1080p",
       "url": "https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Nusantara TV",
@@ -1354,8 +1354,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "RBTV Jogja",
@@ -1702,8 +1702,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Tegar TV Lampung",
@@ -1997,7 +1997,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Ambon/hls/Ambon.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2027,7 +2027,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Bengkulu/hls/Bengkulu.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2057,7 +2057,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Kalbar/hls/Kalbar.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2077,7 +2077,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/NTT/hls/NTT.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2107,7 +2107,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Sultra/hls/Sultra.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",

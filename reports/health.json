@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-17T09:15:22.540774+00:00",
+  "generated_at": "2026-11-18T08:35:04.934208+00:00",
   "country": "ID",
   "source": "https://github.com/iptv-org/api",
   "channels_with_streams": 128,
   "candidate_streams": 200,
   "declared_hd_streams_720p_plus": 126,
-  "http_reachable_streams": 114,
+  "http_reachable_streams": 118,
   "health_counts": {
-    "unreachable": 49,
-    "offline": 37,
-    "online": 114
+    "unreachable": 48,
+    "offline": 34,
+    "online": 118
   },
   "hls_validation_counts": {
-    "not_checked": 86,
-    "segment_ok": 106,
-    "failed": 6,
+    "not_checked": 82,
+    "segment_ok": 108,
+    "failed": 8,
     "not_hls": 2
   },
-  "hls_segment_verified_streams": 106,
+  "hls_segment_verified_streams": 108,
   "notes": [
     "HLS validation checks a manifest and one sample media segment; it is not a continuous playback or bitrate test.",
     "Quality is based on source metadata/title, not measured bitrate or decoded resolution.",
@@ -190,8 +190,8 @@
       "quality": null,
       "url": "https://video.detik.com/livecnn/smil:cnntv/chunklist_w268557525_b384000_sleng.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error _ssl.c:994: The handshake operation timed out>"
     },
     {
       "channel": "Huma Betang TV",
@@ -266,8 +266,8 @@
       "quality": null,
       "url": "https://video.detik.com/livecnbc/smil:cnbctv/chunklist_w1279679883_b384000_sleng.m3u8",
       "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error _ssl.c:994: The handshake operation timed out>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Salira TV",
@@ -788,8 +788,8 @@
       "quality": "720p",
       "url": "http://122.248.43.242:1935/BALIKPAPANTV/_definst_/myStream/playlist.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Bandung TV",
@@ -834,8 +834,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Biznet Adventure",
@@ -1102,8 +1102,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "JTV",
@@ -1112,8 +1112,8 @@
       "quality": "480p",
       "url": "http://122.248.43.242:1935/JTVMALANG/_definst_/myStream/playlist.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Kawanua TV",
@@ -1122,8 +1122,8 @@
       "quality": "720p",
       "url": "http://122.248.43.242:1935/KAWANUATV/_definst_/myStream/playlist.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Kilisuci TV",
@@ -1366,8 +1366,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "unreachable",
-      "detail": "The read operation timed out"
+      "status": "offline",
+      "detail": "HTTP 502"
     },
     {
       "channel": "RCTI",
@@ -1474,8 +1474,8 @@
       "quality": "720p",
       "url": "https://cdn.adyadigitalteknologi.com:8090/vod/relay.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "SCTV",
@@ -1542,8 +1542,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "SMTV",
@@ -1646,8 +1646,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Sultra TV",
@@ -1839,7 +1839,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Aceh/hls/Aceh.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1963,7 +1963,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Sumbar/hls/Sumbar.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2007,7 +2007,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Babel/hls/Babel.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2037,7 +2037,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Gorontalo/hls/Gorontalo.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",

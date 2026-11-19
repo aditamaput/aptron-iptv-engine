@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T08:35:04.934208+00:00",
+  "generated_at": "2026-11-19T08:51:03.869778+00:00",
   "country": "ID",
   "source": "https://github.com/iptv-org/api",
   "channels_with_streams": 128,
@@ -7,17 +7,17 @@
   "declared_hd_streams_720p_plus": 126,
   "http_reachable_streams": 118,
   "health_counts": {
-    "unreachable": 48,
-    "offline": 34,
-    "online": 118
+    "unreachable": 50,
+    "online": 118,
+    "offline": 32
   },
   "hls_validation_counts": {
     "not_checked": 82,
-    "segment_ok": 108,
-    "failed": 8,
+    "segment_ok": 109,
+    "failed": 7,
     "not_hls": 2
   },
-  "hls_segment_verified_streams": 108,
+  "hls_segment_verified_streams": 109,
   "notes": [
     "HLS validation checks a manifest and one sample media segment; it is not a continuous playback or bitrate test.",
     "Quality is based on source metadata/title, not measured bitrate or decoded resolution.",
@@ -42,8 +42,8 @@
       "quality": null,
       "url": "http://origin5.mediacdn.ru/live/kidstv/index.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 503"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "My Kidz",
@@ -266,8 +266,8 @@
       "quality": null,
       "url": "https://video.detik.com/livecnbc/smil:cnbctv/chunklist_w1279679883_b384000_sleng.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error _ssl.c:994: The handshake operation timed out>"
     },
     {
       "channel": "Salira TV",
@@ -758,8 +758,8 @@
       "quality": "1080p",
       "url": "https://hgmtv.com:2020/hls/asthalive/asthalive.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Astro Blitar TV",
@@ -1046,8 +1046,8 @@
       "quality": "720p",
       "url": "http://103.255.15.222:1935/tv/jitv_720p/playlist.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "Jogja TV",
@@ -1112,8 +1112,8 @@
       "quality": "480p",
       "url": "http://122.248.43.242:1935/JTVMALANG/_definst_/myStream/playlist.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Kawanua TV",
@@ -1132,8 +1132,8 @@
       "quality": null,
       "url": "https://5bf7b725107e5.streamlock.net/kstv/kstv/playlist.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "KTV",
@@ -1342,8 +1342,8 @@
       "quality": "480p",
       "url": "https://www.streaming.radartv.co.id/hls/test.m3u8",
       "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Radar Tasikmalaya TV",
@@ -1366,8 +1366,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 502"
+      "status": "unreachable",
+      "detail": "The read operation timed out"
     },
     {
       "channel": "RCTI",
@@ -1464,8 +1464,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Sangaji TV",
@@ -1474,8 +1474,8 @@
       "quality": "720p",
       "url": "https://cdn.adyadigitalteknologi.com:8090/vod/relay.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "SCTV",
@@ -1839,7 +1839,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Aceh/hls/Aceh.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1881,7 +1881,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1963,7 +1963,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Sumbar/hls/Sumbar.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",

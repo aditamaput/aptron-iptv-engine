@@ -1,24 +1,23 @@
 {
-  "generated_at": "2026-11-20T08:35:56.975185+00:00",
+  "generated_at": "2026-11-21T08:19:03.064152+00:00",
   "country": "ID",
   "source": "https://github.com/iptv-org/api",
   "channels_with_streams": 128,
   "candidate_streams": 200,
   "declared_hd_streams_720p_plus": 126,
-  "http_reachable_streams": 121,
+  "http_reachable_streams": 112,
   "health_counts": {
-    "unreachable": 42,
-    "offline": 36,
-    "online": 121,
-    "unplayable": 1
+    "unreachable": 60,
+    "offline": 28,
+    "online": 112
   },
   "hls_validation_counts": {
-    "not_checked": 79,
-    "segment_ok": 111,
-    "failed": 8,
+    "not_checked": 88,
+    "segment_ok": 101,
+    "failed": 9,
     "not_hls": 2
   },
-  "hls_segment_verified_streams": 111,
+  "hls_segment_verified_streams": 101,
   "notes": [
     "HLS validation checks a manifest and one sample media segment; it is not a continuous playback or bitrate test.",
     "Quality is based on source metadata/title, not measured bitrate or decoded resolution.",
@@ -43,8 +42,8 @@
       "quality": null,
       "url": "http://origin5.mediacdn.ru/live/kidstv/index.m3u8",
       "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
+      "status": "offline",
+      "detail": "HTTP 503"
     },
     {
       "channel": "My Kidz",
@@ -75,8 +74,8 @@
       "quality": "1080p",
       "url": "http://202.150.172.59/VTVHD/index.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "VTV",
@@ -191,8 +190,8 @@
       "quality": null,
       "url": "https://video.detik.com/livecnn/smil:cnntv/chunklist_w268557525_b384000_sleng.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error _ssl.c:994: The handshake operation timed out>"
     },
     {
       "channel": "Huma Betang TV",
@@ -203,8 +202,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "Kompas TV",
@@ -267,8 +266,8 @@
       "quality": null,
       "url": "https://video.detik.com/livecnbc/smil:cnbctv/chunklist_w1279679883_b384000_sleng.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error _ssl.c:994: The handshake operation timed out>"
     },
     {
       "channel": "Salira TV",
@@ -319,8 +318,8 @@
       "quality": null,
       "url": "https://rinjanitv.cloud/hls/tvkabel.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "My Cinema",
@@ -411,8 +410,8 @@
       "quality": "720p",
       "url": "https://v3.siar.us/ficomchannel/live/playlist.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "Indonesiana.TV",
@@ -477,8 +476,8 @@
       "quality": "1080p",
       "url": "http://202.150.172.59/TVRISport/index.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 403"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "TVRI Sport",
@@ -563,8 +562,8 @@
       "quality": "720p",
       "url": "https://tv.aliman.id/aliman/live.m3u8",
       "labels": [],
-      "status": "unplayable",
-      "detail": "Server returned HTML, not media"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Ashiil TV",
@@ -651,8 +650,8 @@
       "quality": "576p",
       "url": "https://61146e7ab7a66.streamlock.net:8089/tes/1/chunklist.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Madani TV",
@@ -739,8 +738,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "ANTV",
@@ -921,8 +920,8 @@
       "quality": "720p",
       "url": "https://dhohotv.siar.us/dhohotv/live/playlist.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "dTVi",
@@ -943,8 +942,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "Efarina TV",
@@ -973,8 +972,8 @@
       "quality": "1080p",
       "url": "http://202.150.172.59/GTVHD/index.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 403"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "GTV",
@@ -993,8 +992,8 @@
       "quality": "1080p",
       "url": "http://202.150.172.59/Indosiar/index.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 403"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "Jak TV",
@@ -1155,8 +1154,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "Magna Channel",
@@ -1165,8 +1164,8 @@
       "quality": "1080p",
       "url": "http://202.150.172.59/MagnaChannel/index.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "Magna Channel",
@@ -1265,8 +1264,8 @@
       "quality": "1080p",
       "url": "https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "Nusantara TV",
@@ -1301,8 +1300,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "PKTV",
@@ -1355,8 +1354,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "RBTV Jogja",
@@ -1377,8 +1376,8 @@
       "quality": "1080p",
       "url": "http://202.150.172.59/RCTIHD/index.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 403"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "RCTI",
@@ -1465,8 +1464,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Sangaji TV",
@@ -1485,8 +1484,8 @@
       "quality": null,
       "url": "http://202.150.172.59/SCTV/tracks-v1a1/mono.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 403"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "SCTV",
@@ -1520,7 +1519,7 @@
       "url": "http://116.254.112.74/hls/cakralive.m3u8",
       "labels": [],
       "status": "unreachable",
-      "detail": "<urlopen error [Errno 113] No route to host>"
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "Simpang5 TV",
@@ -1703,8 +1702,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "Tegar TV Lampung",
@@ -1789,8 +1788,8 @@
       "quality": "1080p",
       "url": "http://202.150.172.59/TVRI/index.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "TVRI",
@@ -1882,7 +1881,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1902,7 +1901,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Kaltim/hls/Kaltim.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1922,7 +1921,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/NTB/hls/NTB.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1934,7 +1933,7 @@
         "Not 24/7"
       ],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1954,7 +1953,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Sulteng/hls/Sulteng.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1976,7 +1975,7 @@
         "Not 24/7"
       ],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2008,7 +2007,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Babel/hls/Babel.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2018,7 +2017,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Bali/hls/Bali.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2028,7 +2027,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Bengkulu/hls/Bengkulu.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2088,7 +2087,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Papua/hls/Papua.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",

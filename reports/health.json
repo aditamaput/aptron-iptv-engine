@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-21T08:19:03.064152+00:00",
+  "generated_at": "2026-11-22T08:00:47.075756+00:00",
   "country": "ID",
   "source": "https://github.com/iptv-org/api",
   "channels_with_streams": 128,
   "candidate_streams": 200,
   "declared_hd_streams_720p_plus": 126,
-  "http_reachable_streams": 112,
+  "http_reachable_streams": 115,
   "health_counts": {
-    "unreachable": 60,
-    "offline": 28,
-    "online": 112
+    "unreachable": 50,
+    "offline": 35,
+    "online": 115
   },
   "hls_validation_counts": {
-    "not_checked": 88,
-    "segment_ok": 101,
-    "failed": 9,
+    "not_checked": 85,
+    "segment_ok": 106,
+    "failed": 7,
     "not_hls": 2
   },
-  "hls_segment_verified_streams": 101,
+  "hls_segment_verified_streams": 106,
   "notes": [
     "HLS validation checks a manifest and one sample media segment; it is not a continuous playback or bitrate test.",
     "Quality is based on source metadata/title, not measured bitrate or decoded resolution.",
@@ -202,8 +202,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Kompas TV",
@@ -318,8 +318,8 @@
       "quality": null,
       "url": "https://rinjanitv.cloud/hls/tvkabel.m3u8",
       "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "My Cinema",
@@ -410,8 +410,8 @@
       "quality": "720p",
       "url": "https://v3.siar.us/ficomchannel/live/playlist.m3u8",
       "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Indonesiana.TV",
@@ -640,8 +640,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "I Am Channel",
@@ -738,8 +738,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "ANTV",
@@ -920,8 +920,8 @@
       "quality": "720p",
       "url": "https://dhohotv.siar.us/dhohotv/live/playlist.m3u8",
       "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "dTVi",
@@ -942,8 +942,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Efarina TV",
@@ -1102,8 +1102,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "JTV",
@@ -1154,8 +1154,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Magna Channel",
@@ -1264,8 +1264,8 @@
       "quality": "1080p",
       "url": "https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8",
       "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Nusantara TV",
@@ -1342,8 +1342,8 @@
       "quality": "480p",
       "url": "https://www.streaming.radartv.co.id/hls/test.m3u8",
       "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Radar Tasikmalaya TV",
@@ -1354,8 +1354,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "RBTV Jogja",
@@ -1702,8 +1702,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Tegar TV Lampung",
@@ -1953,7 +1953,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Sulteng/hls/Sulteng.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -1975,7 +1975,7 @@
         "Not 24/7"
       ],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2047,7 +2047,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Jabar/hls/Jabar.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",

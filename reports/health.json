@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-22T08:00:47.075756+00:00",
+  "generated_at": "2026-11-23T09:09:04.497428+00:00",
   "country": "ID",
   "source": "https://github.com/iptv-org/api",
-  "channels_with_streams": 128,
-  "candidate_streams": 200,
-  "declared_hd_streams_720p_plus": 126,
-  "http_reachable_streams": 115,
+  "channels_with_streams": 133,
+  "candidate_streams": 207,
+  "declared_hd_streams_720p_plus": 131,
+  "http_reachable_streams": 119,
   "health_counts": {
-    "unreachable": 50,
-    "offline": 35,
-    "online": 115
+    "unreachable": 54,
+    "offline": 34,
+    "online": 119
   },
   "hls_validation_counts": {
-    "not_checked": 85,
-    "segment_ok": 106,
-    "failed": 7,
+    "not_checked": 88,
+    "segment_ok": 108,
+    "failed": 9,
     "not_hls": 2
   },
-  "hls_segment_verified_streams": 106,
+  "hls_segment_verified_streams": 108,
   "notes": [
     "HLS validation checks a manifest and one sample media segment; it is not a continuous playback or bitrate test.",
     "Quality is based on source metadata/title, not measured bitrate or decoded resolution.",
@@ -270,6 +270,16 @@
       "detail": "<urlopen error _ssl.c:994: The handshake operation timed out>"
     },
     {
+      "channel": "IDX Channel",
+      "channel_id": "IDXChannel.id",
+      "title": "IDX Channel",
+      "quality": "720p",
+      "url": "https://proxy-v.rctiplus.id/live/web/idx/index.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
+    },
+    {
       "channel": "Salira TV",
       "channel_id": "SaliraTV.id",
       "title": "Salira TV",
@@ -320,6 +330,26 @@
       "labels": [],
       "status": "online",
       "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Galaxy",
+      "channel_id": "Galaxy.id",
+      "title": "Galaxy",
+      "quality": "720p",
+      "url": "https://proxy-v.rctiplus.id/live/web/galaxy/index.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
+    },
+    {
+      "channel": "Galaxy Premium",
+      "channel_id": "GalaxyPremium.id",
+      "title": "Galaxy Premium",
+      "quality": "720p",
+      "url": "https://proxy-v.rctiplus.id/live/web/galaxyprem/index.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "My Cinema",
@@ -410,8 +440,8 @@
       "quality": "720p",
       "url": "https://v3.siar.us/ficomchannel/live/playlist.m3u8",
       "labels": [],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Indonesiana.TV",
@@ -640,8 +670,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "I Am Channel",
@@ -738,8 +768,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "ANTV",
@@ -750,6 +780,16 @@
       "labels": [],
       "status": "offline",
       "detail": "HTTP 401"
+    },
+    {
+      "channel": "ANTV",
+      "channel_id": "ANTV.id",
+      "title": "ANTV HD",
+      "quality": "480p",
+      "url": "https://proxy-v.rctiplus.id/live/web/antv/index.m3u8",
+      "labels": [],
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "Astha TV",
@@ -878,8 +918,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Caruban TV",
@@ -1132,8 +1172,8 @@
       "quality": null,
       "url": "https://5bf7b725107e5.streamlock.net/kstv/kstv/playlist.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "KTV",
@@ -1249,6 +1289,16 @@
       "channel": "Moji",
       "channel_id": "Moji.id",
       "title": "Moji",
+      "quality": "480p",
+      "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h207/01.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Moji",
+      "channel_id": "Moji.id",
+      "title": "Moji",
       "quality": null,
       "url": "https://op-group1-swiftservehd-1.dens.tv/h/h207/index.m3u8",
       "labels": [
@@ -1300,8 +1350,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "PKTV",
@@ -1702,8 +1752,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Tegar TV Lampung",
@@ -1724,6 +1774,26 @@
       "labels": [],
       "status": "offline",
       "detail": "HTTP 404"
+    },
+    {
+      "channel": "Trans TV",
+      "channel_id": "TransTV.id",
+      "title": "Trans TV HD",
+      "quality": "720p",
+      "url": "https://live.cnbcindonesia.com/transtv/smil:transtv.smil/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+    },
+    {
+      "channel": "Trans7",
+      "channel_id": "Trans7.id",
+      "title": "Trans7 HD",
+      "quality": "720p",
+      "url": "https://live.cnbcindonesia.com/trans7/smil:trans7.smil/playlist.m3u8",
+      "labels": [],
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TV 9 Nusantara",
@@ -2007,7 +2077,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Babel/hls/Babel.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "detail": "HTTP 200; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2017,7 +2087,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Bali/hls/Bali.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2047,7 +2117,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Jabar/hls/Jabar.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",

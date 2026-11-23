@@ -45,6 +45,8 @@ https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8
 https://ssfm.siar.us/ssfm/live/playlist.m3u8
 #EXTINF:-1 tvg-id="CNBCIndonesia.id" tvg-name="CNBC Indonesia" group-title="Indonesia | Bisnis" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/51/CNBC_Indonesia_2025.svg",CNBC Indonesia (CNBC Indonesia)
 https://video.detik.com/livecnbc/smil:cnbctv/chunklist_w1279679883_b384000_sleng.m3u8
+#EXTINF:-1 tvg-id="IDXChannel.id" tvg-name="IDX Channel" group-title="Indonesia | Bisnis" tvg-logo="https://i.imgur.com/xPvrcsr.png",IDX Channel (720p)
+https://proxy-v.rctiplus.id/live/web/idx/index.m3u8
 #EXTINF:-1 tvg-id="SaliraTV.id" tvg-name="Salira TV" group-title="Indonesia | Budaya" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_Salira_TV.png",Salira TV (720p)
 https://live.salira.tv/p/3870/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="SaliraTV.id" tvg-name="Salira TV" group-title="Indonesia | Budaya" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_Salira_TV.png",Salira TV (720p)
@@ -55,6 +57,10 @@ https://restreamer.indonusa.id:8443/d5f4ad43-1b5a-4b0f-8bef-5b37224ed221.m3u8
 https://op-group1-swiftservehd-1.dens.tv/h/h236/index.m3u8
 #EXTINF:-1 tvg-id="RinjaniTV.id" tvg-name="Rinjani TV" group-title="Indonesia | Edukasi" tvg-logo="https://lombokindustries.com/assunnah/zone/img/rinjanitv.png",Rinjani TV (Rinjani TV)
 https://rinjanitv.cloud/hls/tvkabel.m3u8
+#EXTINF:-1 tvg-id="Galaxy.id" tvg-name="Galaxy" group-title="Indonesia | Film" tvg-logo="https://i.ibb.co/PG69mfKm/IMG-2469.webp",Galaxy (720p)
+https://proxy-v.rctiplus.id/live/web/galaxy/index.m3u8
+#EXTINF:-1 tvg-id="GalaxyPremium.id" tvg-name="Galaxy Premium" group-title="Indonesia | Film" tvg-logo="https://i.imgur.com/oGKtYYG.png",Galaxy Premium (720p)
+https://proxy-v.rctiplus.id/live/web/galaxyprem/index.m3u8
 #EXTINF:-1 tvg-id="MyCinema.id" tvg-name="My Cinema" group-title="Indonesia | Film" tvg-logo="https://i.imgur.com/BTmcTQO.png",My Cinema (My Cinema)
 https://op-group1-swiftservehd-1.dens.tv/h/h192/index.m3u8
 #EXTINF:-1 tvg-id="BiznetLifestyle.id" tvg-name="Biznet Lifestyle" group-title="Indonesia | Gaya Hidup" tvg-logo="https://i.imgur.com/XqUfQKA.png",Biznet Lifestyle (1080p)
@@ -133,6 +139,8 @@ http://ikitv.sqn.at:8000/play/a00j/index.m3u8
 https://akativi.siar.us/live/akativi.m3u8
 #EXTINF:-1 tvg-id="ANTV.id" tvg-name="ANTV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Antv_logo.svg/960px-Antv_logo.svg.png",ANTV (720p)
 http://103.58.160.157:8278/720-ANTV/playlist.m3u8
+#EXTINF:-1 tvg-id="ANTV.id" tvg-name="ANTV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Antv_logo.svg/960px-Antv_logo.svg.png",ANTV (480p)
+https://proxy-v.rctiplus.id/live/web/antv/index.m3u8
 #EXTINF:-1 tvg-id="AsthaTV.id" tvg-name="Astha TV" group-title="Indonesia | Umum" tvg-logo="https://astha.garuda.tv/assets/logo-DLGyXEGO.png",Astha TV (1080p)
 https://hgmtv.com:2020/hls/asthalive/asthalive.m3u8
 #EXTINF:-1 tvg-id="AstroBlitarTV.id" tvg-name="Astro Blitar TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/rORKbGw.png",Astro Blitar TV (720p)
@@ -225,6 +233,8 @@ http://ikitv.sqn.at:8000/play/a044/index.m3u8
 https://op-flashcon-digdayahd-1.dens.tv/h/h223/index.m3u8
 #EXTINF:-1 tvg-id="MGSTV.id" tvg-name="MGSTV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/MYU7dsZ.png",MGSTV (360p)
 https://mgstv.siar.us/live/mgstv.m3u8
+#EXTINF:-1 tvg-id="Moji.id" tvg-name="Moji" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/mM9zapJ.png",Moji (480p)
+https://op-flashcon-digdayahd-1.dens.tv/h/h207/01.m3u8
 #EXTINF:-1 tvg-id="Moji.id" tvg-name="Moji" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/mM9zapJ.png",Moji (Moji)
 https://op-group1-swiftservehd-1.dens.tv/h/h207/index.m3u8
 #EXTINF:-1 tvg-id="NusantaraTV.id" tvg-name="Nusantara TV" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/viun5hj.png",Nusantara TV (1080p)
@@ -313,6 +323,10 @@ https://v2.siar.us/tatv/live.sdp/playlist.m3u8
 http://wms.klikhost.com:1935/tegartv/tegartv/playlist.m3u8
 #EXTINF:-1 tvg-id="TegarTVLampung.id" tvg-name="Tegar TV Lampung" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/0Vp3f2J.png",Tegar TV Lampung (480p)
 https://5bf7b725107e5.streamlock.net/tegartv/tegartv/playlist.m3u8
+#EXTINF:-1 tvg-id="TransTV.id" tvg-name="Trans TV" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Trans_TV_2013.svg/960px-Trans_TV_2013.svg.png",Trans TV (720p)
+https://live.cnbcindonesia.com/transtv/smil:transtv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Trans7.id" tvg-name="Trans7" group-title="Indonesia | Umum" tvg-logo="https://i.imgur.com/fAbGImS.png",Trans7 (720p)
+https://live.cnbcindonesia.com/trans7/smil:trans7.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TV9Nusantara.id" tvg-name="TV 9 Nusantara" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/id/e/ed/TV9_Nusantara.png",TV 9 Nusantara (720p)
 https://5bf7b725107e5.streamlock.net/tv9/tv9/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMu.id" tvg-name="TV Mu" group-title="Indonesia | Umum" tvg-logo="https://upload.wikimedia.org/wikipedia/id/d/d0/TvMu.png",TV Mu (720p)

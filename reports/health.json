@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-24T10:57:59.266017+00:00",
+  "generated_at": "2026-11-25T09:53:18.233714+00:00",
   "country": "ID",
   "source": "https://github.com/iptv-org/api",
-  "channels_with_streams": 133,
-  "candidate_streams": 210,
-  "declared_hd_streams_720p_plus": 134,
-  "http_reachable_streams": 125,
+  "channels_with_streams": 131,
+  "candidate_streams": 207,
+  "declared_hd_streams_720p_plus": 132,
+  "http_reachable_streams": 119,
   "health_counts": {
-    "unreachable": 55,
-    "online": 125,
-    "offline": 30
+    "unreachable": 50,
+    "offline": 38,
+    "online": 119
   },
   "hls_validation_counts": {
-    "not_checked": 85,
-    "segment_ok": 110,
+    "not_checked": 88,
+    "segment_ok": 105,
     "failed": 12,
-    "not_hls": 3
+    "not_hls": 2
   },
-  "hls_segment_verified_streams": 110,
+  "hls_segment_verified_streams": 105,
   "notes": [
     "HLS validation checks a manifest and one sample media segment; it is not a continuous playback or bitrate test.",
     "Quality is based on source metadata/title, not measured bitrate or decoded resolution.",
@@ -42,8 +42,8 @@
       "quality": null,
       "url": "http://origin5.mediacdn.ru/live/kidstv/index.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 503"
     },
     {
       "channel": "My Kidz",
@@ -190,8 +190,8 @@
       "quality": null,
       "url": "https://video.detik.com/livecnn/smil:cnntv/chunklist_w268557525_b384000_sleng.m3u8",
       "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error _ssl.c:994: The handshake operation timed out>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Huma Betang TV",
@@ -266,18 +266,8 @@
       "quality": null,
       "url": "https://video.detik.com/livecnbc/smil:cnbctv/chunklist_w1279679883_b384000_sleng.m3u8",
       "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error _ssl.c:994: The handshake operation timed out>"
-    },
-    {
-      "channel": "IDX Channel",
-      "channel_id": "IDXChannel.id",
-      "title": "IDX Channel",
-      "quality": "720p",
-      "url": "https://proxy-v.rctiplus.id/live/web/idx/index.m3u8",
-      "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Salira TV",
@@ -330,16 +320,6 @@
       "labels": [],
       "status": "online",
       "detail": "HTTP 206; application/vnd.apple.mpegurl"
-    },
-    {
-      "channel": "Galaxy",
-      "channel_id": "Galaxy.id",
-      "title": "Galaxy",
-      "quality": "720p",
-      "url": "https://proxy-v.rctiplus.id/live/web/galaxy/index.m3u8",
-      "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "Galaxy Premium",
@@ -648,8 +628,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/x-mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error timed out>"
     },
     {
       "channel": "DMI TV",
@@ -768,8 +748,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "offline",
-      "detail": "HTTP 404"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "ANTV",
@@ -782,24 +762,14 @@
       "detail": "HTTP 401"
     },
     {
-      "channel": "ANTV",
-      "channel_id": "ANTV.id",
-      "title": "ANTV HD",
-      "quality": "480p",
-      "url": "https://proxy-v.rctiplus.id/live/web/antv/index.m3u8",
-      "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error timed out>"
-    },
-    {
       "channel": "Astha TV",
       "channel_id": "AsthaTV.id",
       "title": "Astha TV",
       "quality": "1080p",
       "url": "https://hgmtv.com:2020/hls/asthalive/asthalive.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Astro Blitar TV",
@@ -874,8 +844,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Biznet Adventure",
@@ -1108,8 +1078,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "unreachable",
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "JTV",
@@ -1182,8 +1152,8 @@
       "quality": null,
       "url": "https://5bf7b725107e5.streamlock.net/kstv/kstv/playlist.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "KTV",
@@ -1360,8 +1330,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "PKTV",
@@ -1534,8 +1504,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Sangaji TV",
@@ -1612,8 +1582,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "SMTV",
@@ -1622,8 +1592,8 @@
       "quality": "720p",
       "url": "https://e.siar.us/live/smtv.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Sriwijaya TV",
@@ -1716,8 +1686,8 @@
       "labels": [
         "Not 24/7"
       ],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "offline",
+      "detail": "HTTP 404"
     },
     {
       "channel": "Sultra TV",
@@ -1802,8 +1772,8 @@
       "quality": "720p",
       "url": "https://live.cnbcindonesia.com/transtv/smil:transtv.smil/playlist.m3u8",
       "labels": [],
-      "status": "unreachable",
-      "detail": "<urlopen error _ssl.c:994: The handshake operation timed out>"
+      "status": "online",
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "Trans7",
@@ -1812,8 +1782,8 @@
       "quality": "720p",
       "url": "https://live.cnbcindonesia.com/trans7/smil:trans7.smil/playlist.m3u8",
       "labels": [],
-      "status": "online",
-      "detail": "HTTP 206; application/vnd.apple.mpegurl"
+      "status": "unreachable",
+      "detail": "<urlopen error _ssl.c:994: The handshake operation timed out>"
     },
     {
       "channel": "TV 9 Nusantara",
@@ -1991,7 +1961,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Kalsel/hls/Kalsel.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2053,7 +2023,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Sulteng/hls/Sulteng.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
@@ -2187,7 +2157,7 @@
       "url": "https://ott-balancer.tvri.go.id/live/eds/Papua/hls/Papua.m3u8",
       "labels": [],
       "status": "online",
-      "detail": "HTTP 200; application/vnd.apple.mpegurl"
+      "detail": "HTTP 206; application/vnd.apple.mpegurl"
     },
     {
       "channel": "TVRI",
